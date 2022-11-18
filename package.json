@@ -1,16 +1,16 @@
 {
   "name": "create-un",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@7.11.0",
   "description": "Create Universal template",
   "author": "peterroe",
   "license": "MIT",
-  "homepage": "https://github.com/peterroe/create-un#readme",
+  "homepage": "https://github.com/commandjs/create-un#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peterroe/create-un.git"
+    "url": "git+https://github.com/commandjs/create-un.git"
   },
-  "bugs": "https://github.com/peterroe/create-un/issues",
+  "bugs": "https://github.com/commandjs/create-un/issues",
   "keywords": [
     "cli",
     "typescript",
