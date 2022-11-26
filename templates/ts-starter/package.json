@@ -1,0 +1,46 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "packageManager": "pnpm@7.12.2",
+  "description": "typescript-template",
+  "keywords": [
+    "typescript",
+    "template"
+  ],
+  "license": "MIT",
+  "author": "peterroe",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint \"**/*.{ts,js}\"",
+    "fix": "eslint --fix \"**/*.{ts,js}\"",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "release": "bumpp",
+    "typecheck": "tsc --noEmit",
+    "prepare": "git init & husky install"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "0.27.0",
+    "bumpp": "8.2.1",
+    "eslint": "8.24.0",
+    "esno": "0.16.3",
+    "husky": "8.0.1",
+    "typescript": "4.8.4",
+    "unbuild": "0.8.11",
+    "vite": "3.1.5",
+    "vitest": "0.23.4"
+  }
+}

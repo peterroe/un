@@ -1,0 +1,53 @@
+{
+  "name": "vue-component-starter",
+  "packageManager": "pnpm@7.13.6",
+  "version": "1.0.0",
+  "description": "component based on vue3.x",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:demo": "vite build --config demo/vite.config.ts",
+    "deploy:demo": "pnpm build:demo && gh-pages -d docs && rimraf docs",
+    "preview": "vite preview",
+    "lint": "eslint \"**/*.{vue,ts,js}\"",
+    "fix": "eslint --fix \"**/*.{vue,ts,js}\"",
+    "release": "bumpp",
+    "test": "vitest",
+    "typecheck": "vue-tsc --noEmit",
+    "prepare": "git init && husky install"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.umd.js",
+      "import": "./dist/index.es.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "vue3",
+    "component",
+    "vite"
+  ],
+  "author": "peterroe",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "0.29.4",
+    "@vitejs/plugin-vue": "3.1.2",
+    "@vue/test-utils": "2.1.0",
+    "bumpp": "8.2.1",
+    "eslint": "8.24.0",
+    "gh-pages": "4.0.0",
+    "happy-dom": "6.0.4",
+    "husky": "8.0.1",
+    "rimraf": "3.0.2",
+    "typescript": "4.8.4",
+    "vite": "3.1.4",
+    "vite-plugin-dts": "1.6.4",
+    "vitest": "0.23.4",
+    "vue": "3.2.40",
+    "vue-tsc": "0.40.13"
+  }
+}

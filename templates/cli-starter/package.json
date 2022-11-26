@@ -1,0 +1,61 @@
+{
+  "name": "cli-starter",
+  "version": "1.0.0",
+  "packageManager": "pnpm@7.11.0",
+  "description": "A command line tool template",
+  "author": "peterroe",
+  "license": "MIT",
+  "homepage": "https://github.com/peterroe/cli-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterroe/cli-starter.git"
+  },
+  "bugs": "https://github.com/peterroe/cli-starter/issues",
+  "keywords": [
+    "cli",
+    "typescript",
+    "template"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "cli-starter": "./bin/index.mjs"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "lint": "eslint \"**/*.{ts,js}\"",
+    "fix": "eslint --fix \"**/*.{ts,js}\"",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "release": "bumpp",
+    "typecheck": "tsc --noEmit",
+    "prepare": "git init & husky install"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "0.31.0",
+    "@types/node": "18.6.0",
+    "@vitest/coverage-c8": "0.24.3",
+    "bumpp": "8.2.1",
+    "cac": "6.7.14",
+    "eslint": "8.23.1",
+    "esno": "0.16.3",
+    "husky": "8.0.1",
+    "typescript": "4.8.2",
+    "unbuild": "0.8.11",
+    "vite": "3.1.4",
+    "vitest": "0.23.4"
+  }
+}
