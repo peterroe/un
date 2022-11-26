@@ -4,9 +4,9 @@ Scaffold for creating templates
 
 Help you create: 
 
-* command line tool template
-* vue component template
-* typescript template
+* 🔧 Command line tool template
+* 🖖 Vue component template
+* 🦾 Typescript template
 
 ## Try it now!
 
@@ -19,5 +19,5 @@ $ pnpm create un
 More: 
 
 * [cli-starter](./templates/cli-starter/README.md)
-* [vue-component-starter](./templates/cli-starter/README.md)
+* [vue-component-starter](./templates/vue-component-starter/README.md)
 * [ts-starter](./templates/ts-starter/README.md)

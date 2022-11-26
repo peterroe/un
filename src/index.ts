@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'url'
 import { copySync } from 'fs-extra'
+import minimist from 'minimist'
 import prompts from 'prompts'
 import {
   blue,
@@ -10,6 +11,10 @@ import {
   reset,
   yellow,
 } from 'kolorist'
+const argv = minimist<{
+  t?: string
+  template?: string
+}>(process.argv.slice(2), { string: ['_'] })
 const cwd = process.cwd()
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 interface Framework {
@@ -33,7 +38,8 @@ const FRAMEWORK: Array<Framework> = [
 
 const defaultTargetDir = 'un-project'
 async function init() {
-  const argTargetDir = process.argv[2]
+  const argTargetDir = argv._[0]
+  const argTemplate = argv.template || argv.t
   let targetDir = argTargetDir || defaultTargetDir
   const result = await prompts(
     [
@@ -60,15 +66,19 @@ async function init() {
         name: 'overwriteChecker',
       },
       {
-        type: 'select',
+        type: argTemplate ? null : 'select',
         name: 'framework',
-        message: reset('Select a framework:'),
+        message: typeof argTemplate === 'string' && !FRAMEWORK.some(it => it.value === argTemplate)
+          ? reset(
+            `"${argTemplate}" isn't a valid template. Please choose from below: `,
+          )
+          : reset('Select a framework:'),
         initial: 0,
         choices: FRAMEWORK,
       },
     ],
   )
-  const { framework, overwrite } = result
+  const { framework = argTemplate, overwrite } = result
 
   const root = join(cwd, targetDir)
   if (overwrite)

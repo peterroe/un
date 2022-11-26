@@ -6,6 +6,7 @@ importers:
     specifiers:
       '@antfu/eslint-config': 0.31.0
       '@types/fs-extra': ^9.0.13
+      '@types/minimist': ^1.2.2
       '@types/node': 18.6.0
       '@types/prompts': ^2.4.1
       '@vitest/coverage-c8': 0.24.3
@@ -15,6 +16,7 @@ importers:
       fs-extra: ^10.1.0
       husky: 8.0.1
       kolorist: ^1.6.0
+      minimist: ^1.2.7
       prompts: ^2.4.2
       typescript: 4.8.2
       unbuild: 0.8.11
@@ -23,6 +25,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config': 0.31.0_nbcbbd7lfrdtsoifdu7ts5ch5u
       '@types/fs-extra': 9.0.13
+      '@types/minimist': 1.2.2
       '@types/node': 18.6.0
       '@types/prompts': 2.4.1
       '@vitest/coverage-c8': 0.24.3
@@ -32,6 +35,7 @@ importers:
       fs-extra: 10.1.0
       husky: 8.0.1
       kolorist: 1.6.0
+      minimist: 1.2.7
       prompts: 2.4.2
       typescript: 4.8.2
       unbuild: 0.8.11
@@ -972,6 +976,10 @@ packages:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
     dependencies:
       '@types/unist': 2.0.6
+    dev: true
+
+  /@types/minimist/1.2.2:
+    resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
   /@types/node/10.17.60:
