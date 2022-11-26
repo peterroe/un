@@ -108,8 +108,7 @@ async function init() {
 
   console.log('\nDone. Now run:\n')
   console.log(`  cd ${targetDir}`)
-  console.log('  pnpm install')
-  console.log('  pnpm run dev\n')
+  console.log('  pnpm install\n')
 }
 
 init().catch((e) => {
