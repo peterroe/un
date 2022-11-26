@@ -9,27 +9,12 @@ A command line tool template.
 Or:
 
 ```bash
-$ npx degit peterroe/cli-starter my-cli
-$ cd my-cli
-$ git init
-$ pnpm i    # npm install -g pnpm
+$ pnpm create un
+# or
+$ pnpm create un [my-cli] -t cli-starter
 ```
 
-## Development
-
-Modify `package.json` 
-
-```diff
-{
-- "name": "cli-starter",
-+ "name": "my-cli",
-  "bin": {
--    "cli-starter": "./bin/index.mjs"
-+    "my-cli": "./bin/index.mjs"
-  },
-```
-
-Then you can link your cli tool to global
+Link your cli tool to global
 
 ```shell
 $ pnpm stub
@@ -66,6 +51,7 @@ Publish to npm:
 $ git remote add origin xxx # make sure you have bound a repo
 $ git push origin main 
 $ pnpm release # or npm publish directly
+$ npm publish
 ```
 
 ## Try yourself!

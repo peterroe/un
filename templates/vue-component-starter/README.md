@@ -24,16 +24,10 @@ You can create yourself component quickly with it.
 
 ### Clone to local
 
-```shell
-$ npx degit peterroe/vue-component-starter myComponent
-$ cd myComponent
-$ pnpm i
-```
-
-Don't forget initialize `.git` if you choose to clone locally:
-
-```shell
-$ git init
+```bash
+$ pnpm create un
+# or 
+$ pnpm create un [my-component] -t vue-component-starter
 ```
 
 ## Development
@@ -58,16 +52,7 @@ And you will see the generated fie in `dist` that ready to be served.
 
 > Before you publish your component, you must give your component a new name in order to prevent conflicts with other people's component names.
 
-Update `package.json`, and take a unique `name` for your `npm package`:
-
-```diff
-{
-- "name": "vue-component-starter"
-+ "name": "your-component-name"
-}
-```
-
-You better also update the registered component name in `src/index.ts`:
+You better update the registered component name in `src/index.ts`:
 
 ```diff
 export function install(app: App) {
@@ -81,7 +66,8 @@ Run `pnpm build` again to get the right files.
 Make sure your are logged into [npm](https://www.npmjs.com/), and run:
 
 ```shell
-$ pnpm release # or `npm publish` directly without verification
+$ pnpm release 
+$ npm publish
 ```
 
 For more details about publish, please check [bumpp](https://github.com/antfu/bumpp).
@@ -96,4 +82,4 @@ Just run:
 $ pnpm deploy:demo
 ```
 
-Then visit <https://peterroe.github.io/vue-component-starter/>
+Then visit `https://[your-username].github.io/[your-component-name]/`, such as <https://peterroe.github.io/vue-component-starter/>

@@ -4,17 +4,15 @@ A typescript template
 
 ## Try it now!
 
-[Create repo from this template on Github](https://github.com/peterroe/ts-starter/generate)
-
-Or:
-
 ```bash
-$ npx degit peterroe/ts-starter my-ts
-$ cd my-ts
-$ pnpm i    # npm install -g pnpm
+$ pnpm create un
+# or
+$ pnpm create un [my-project] -t ts-starter
 ```
 
 ## Development
+
+Run `src/index.ts`
 
 ```shell
 $ pnpm start
@@ -28,12 +26,17 @@ $ pnpm test
 
 ## Build
 
+Build your lib through `unbuild`
+
 ```shell
 $ pnpm build
 ```
 
 ## Publish
 
+Publish your library to npm：
+
 ```shell
 $ pnpm release
+$ npm publish
 ```
