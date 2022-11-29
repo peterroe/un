@@ -27,7 +27,7 @@
     "test": "vitest",
     "release": "bumpp",
     "typecheck": "tsc --noEmit",
-    "prepare": "git init & husky install"
+    "prepare": "git init & husky install && husky add .husky/pre-commit 'npm run lint && npm run typecheck'"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
