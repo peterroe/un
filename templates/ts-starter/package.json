@@ -25,7 +25,7 @@
     "fix": "eslint --fix \"**/*.{ts,js}\"",
     "start": "esno src/index.ts",
     "test": "vitest",
-    "release": "bumpp",
+    "release": "bumpp && npm publish",
     "typecheck": "tsc --noEmit",
     "prepare": "git init & husky install && husky add .husky/pre-commit 'npm run lint && npm run typecheck'"
   },
