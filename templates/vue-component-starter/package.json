@@ -17,7 +17,7 @@
     "release": "bumpp && npm publish",
     "test": "vitest",
     "typecheck": "vue-tsc --noEmit",
-    "prepare": "git init && husky install && husky add .husky/pre-commit 'npm run lint && npm run typecheck'"
+    "git-hook-init": "husky install && husky add .husky/pre-commit 'npm run lint && npm run typecheck'"
   },
   "exports": {
     ".": {

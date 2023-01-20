@@ -17,6 +17,12 @@ $ pnpm stub
 $ pnpm link --global
 ```
 
+Init git hook(optional)
+
+```shell
+$ pnpm git-hook-init
+```
+
 ## Example
 
 This command will help you understand **how cli tool works**:

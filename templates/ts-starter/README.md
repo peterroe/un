@@ -10,6 +10,12 @@ $ pnpm create un
 $ pnpm create un [my-project] -t ts-starter
 ```
 
+Init git hook(optional)
+
+```shell
+$ pnpm git-hook-init
+```
+
 ## Development
 
 Run `src/index.ts`

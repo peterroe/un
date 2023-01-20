@@ -22,12 +22,18 @@ You can create yourself component quickly with it.
 
 [Create repo from this template on Github](https://github.com/peterroe/vue-component-starter/generate)
 
-### Clone to local
+### Try it now!
 
 ```bash
 $ pnpm create un
 # or 
 $ pnpm create un [my-component] -t vue-component-starter
+```
+
+Init git hook(optional)
+
+```shell
+$ pnpm git-hook-init
 ```
 
 ## Development
