@@ -1,31 +1,32 @@
 {
   "name": "cli-starter",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.11.0",
+  "packageManager": "pnpm@7.13.6",
   "description": "A command line tool template",
   "author": "peterroe",
   "license": "MIT",
+  "keywords": [
+    "cli",
+    "typescript",
+    "template"
+  ],
   "homepage": "https://github.com/peterroe/cli-starter#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/peterroe/cli-starter.git"
   },
   "bugs": "https://github.com/peterroe/cli-starter/issues",
-  "keywords": [
-    "cli",
-    "typescript",
-    "template"
-  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./*": "./*"
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "bin": {
     "cli-starter": "./bin/index.mjs"
   },

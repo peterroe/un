@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "packageManager": "pnpm@7.12.2",
   "description": "typescript-template",
+  "author": "peterroe",
+  "license": "MIT",
   "keywords": [
     "typescript",
     "template"
   ],
-  "license": "MIT",
-  "author": "peterroe",
+  "homepage": "https://github.com/peterroe/un#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterroe/un.git"
+  },
+  "bugs": "https://github.com/peterroe/un/issues",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +23,8 @@
       "require": "./dist/index.cjs",
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./*": "./*"
   },
   "scripts": {
     "build": "unbuild",
