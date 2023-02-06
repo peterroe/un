@@ -63,8 +63,5 @@
     "unbuild": "0.8.11",
     "vite": "3.1.4",
     "vitest": "0.23.4"
-  },
-  "dependencies": {
-    "preeval": "^1.0.1"
   }
 }
