@@ -19,7 +19,7 @@ export default defineConfig({
       fileName: format => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['vue'],
+      external: [...Object.keys(pkg.dependencies)],
       output: {
         globals: {
           vue: 'Vue',

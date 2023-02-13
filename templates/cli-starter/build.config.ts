@@ -1,4 +1,6 @@
+import { builtinModules } from 'module'
 import { defineBuildConfig } from 'unbuild'
+import pkg from './package.json'
 
 export default defineBuildConfig({
   entries: [
@@ -9,5 +11,6 @@ export default defineBuildConfig({
   rollup: {
     emitCJS: true,
   },
+  externals: [...builtinModules, ...Object.keys(pkg.dependencies)],
   failOnWarn: false,
 })
