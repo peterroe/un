@@ -14,12 +14,10 @@
     "strictNullChecks": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
-    "types": [
-      "vitest",
-    ],
     "paths": {
       "~/*": ["src/*"]
     }
   },
-  "exclude": ["dist", "node_modules"]
+  "include": ["src/*.ts", "src/*.d.ts", "src/*.tsx", "src/*.vue"],
+  "exclude": ["dist", "node_modules", "example"]
 }

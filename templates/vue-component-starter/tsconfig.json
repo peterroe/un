@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "ESNext",
-    "target": "es2016",
+    "target": "ESNext",
     "lib": ["DOM", "ESNext"],
     "strict": true,
     "esModuleInterop": true,
@@ -17,5 +17,6 @@
       "~/*": ["src/*"]
     }
   },
-  "exclude": ["dist", "node_modules"]
+  "include": ["src/*.ts", "src/*.d.ts", "src/*.tsx", "src/*.vue"],
+  "exclude": ["dist", "node_modules", "example"]
 }
