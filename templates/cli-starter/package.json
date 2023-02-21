@@ -38,7 +38,7 @@
     "start": "esno src/index.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "release": "npm run build && bumpp && npm publish",
+    "release": "pnpm build && bumpp && npm publish",
     "typecheck": "tsc --noEmit",
     "git-hook-init": "husky install && husky add .husky/pre-commit 'npm run lint && npm run typecheck'"
   },

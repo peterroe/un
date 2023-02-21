@@ -37,7 +37,7 @@
     "start": "esno src/index.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "release": "bumpp && npm publish",
+    "release": "pnpm build && bumpp && npm publish",
     "typecheck": "tsc --noEmit"
   },
   "publishConfig": {
