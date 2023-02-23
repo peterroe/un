@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": [
+      "preeval"
+    ],
+    "paths": {
+      "@preeval/shared": ["./packages/shared/src/index.ts"],
+      "@preeval/shared/client": ["./packages/shared/src/rpc/client.ts"],
+      "@preeval/shared/server": ["./packages/shared/src/rpc/server.ts"],
+      "@preeval/ui": ["./packages/ui/plugin.ts"],
+      "@preeval/vue-diff": ["./packages/vue-diff.ts"],
+      "preeval": ["./packages/preeval/src/index.ts"],
+    },
+  },
+  "include": ["packages/**/*.ts", "packages/**/*.d.ts", "packages/**/*.tsx", "packages/**/*.vue"],
+  "exclude": ["dist", "node_modules", "example"]
+}
