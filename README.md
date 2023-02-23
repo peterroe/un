@@ -7,6 +7,7 @@ Help you create:
 * 🔧 Command line tool template
 * 🖖 Vue component template
 * 🦾 Typescript template
+* 🗂 monorepo template
 
 ## Try it now!
 
@@ -21,3 +22,4 @@ More:
 * [cli-starter](./templates/cli-starter/README.md)
 * [vue-component-starter](./templates/vue-component-starter/README.md)
 * [ts-starter](./templates/ts-starter/README.md)
+* [monorepo-starter](./templates/monorepo/README.md)

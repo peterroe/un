@@ -1,31 +1,25 @@
-## Diff-checker
+## monorepo-starter
 
-![img](https://raw.githubusercontent.com/peterroe/static-img/master/20230201004613.png)
+A monorepo template.
 
-## Todo
+## Try it now!
 
-* `preeval diff`
-* `preeval "*/packages/*.ts"`
-* `preeval src/index.ts`
+```bash
+$ pnpm create un
+# or
+$ pnpm create un [my-project] -t monorepo-starter
+```
 
-### Public Structure
+## Build && Publish
 
-```ts
-interface Data {
-  fileName: string
-  codeContent: string
-}
+Build it:
 
-interface NameMap {
-  fileName: string
-  codeContent: string
-  suggestions: string
-}
+```shell
+$ pnpm build
+```
 
-interface Plugin {
-  autoDetectLang: boolean
-  language?: string
-  name: string
-  run: () => Data[]
-}
+Publish packages to npm:
+
+```shell
+$ pnpm release # or npm publish directly
 ```
