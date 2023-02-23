@@ -1,40 +1,37 @@
 import fs from 'node:fs'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'url'
-import { copySync } from 'fs-extra'
+import { copySync, readdirSync } from 'fs-extra'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import {
   blue,
+  cyan,
   green,
   red,
   reset,
   yellow,
 } from 'kolorist'
+
 const argv = minimist<{
   t?: string
   template?: string
 }>(process.argv.slice(2), { string: ['_'] })
+
 const cwd = process.cwd()
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
+
 interface Framework {
   title: string
   value: string
 }
-const FRAMEWORK: Array<Framework> = [
-  {
-    title: yellow('cli-starter'),
-    value: 'cli-starter',
-  },
-  {
-    title: green('vue-component-starter'),
-    value: 'vue-component-starter',
-  },
-  {
-    title: blue('ts-starter'),
-    value: 'ts-starter',
-  },
-]
+const colorPreset = [yellow, cyan, green, blue]
+const templateNames = readdirSync(resolve(__dirname, '../templates'))
+
+const FRAMEWORK: Array<Framework> = templateNames.map((t, i) => ({
+  title: colorPreset[i](t),
+  value: t,
+}))
 
 const defaultTargetDir = 'un-project'
 async function init() {
@@ -53,7 +50,7 @@ async function init() {
         },
       },
       {
-        type: () => !fs.existsSync(targetDir) || isEmpty(targetDir) ? null : 'confirm',
+        type: () => (!fs.existsSync(targetDir) || isEmpty(targetDir)) ? null : 'confirm',
         name: 'overwrite',
         message: `Target directory "${targetDir}" is not empty. Remove existing files and continue?`,
       },
@@ -68,7 +65,7 @@ async function init() {
       {
         type: argTemplate ? null : 'select',
         name: 'framework',
-        message: typeof argTemplate === 'string' && !FRAMEWORK.some(it => it.value === argTemplate)
+        message: (typeof argTemplate === 'string' && !FRAMEWORK.some(it => it.value === argTemplate))
           ? reset(
             `"${argTemplate}" isn't a valid template. Please choose from below: `,
           )
