@@ -5,12 +5,12 @@
   "description": "Create Universal template",
   "author": "peterroe",
   "license": "MIT",
-  "homepage": "https://github.com/commandjs/create-un#readme",
+  "homepage": "https://github.com/peterroe/un#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/commandjs/create-un.git"
+    "url": "git+https://github.com/peterroe/un.git"
   },
-  "bugs": "https://github.com/commandjs/create-un/issues",
+  "bugs": "https://github.com/peterroe/un/issues",
   "keywords": [
     "cli",
     "typescript",
