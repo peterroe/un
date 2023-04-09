@@ -22,6 +22,6 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "tsup": "^6.6.3"
+    "tsup": "^6.7.0"
   }
 }
