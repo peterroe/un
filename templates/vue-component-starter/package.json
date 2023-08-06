@@ -1,7 +1,7 @@
 {
   "name": "vue-component-starter",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.31.0",
+  "packageManager": "pnpm@7.33.6",
   "description": "component based on vue3.x",
   "author": "peterroe",
   "license": "MIT",
