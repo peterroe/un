@@ -45,6 +45,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "dependencies" : {},
   "devDependencies": {
     "@antfu/eslint-config": "0.35.3",
     "@types/node": "18.15.11",

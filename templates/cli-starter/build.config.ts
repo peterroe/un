@@ -11,6 +11,6 @@ export default defineBuildConfig({
   rollup: {
     emitCJS: true,
   },
-  externals: [...builtinModules, ...Object.keys(pkg.dependencies)],
+  externals: [...builtinModules, ...Object.keys(pkg.dependencies || {})],
   failOnWarn: false,
 })
