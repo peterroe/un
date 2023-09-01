@@ -1,4 +1,4 @@
-## ts-starter
+## ts-starter-vite
 
 A typescript template
 
@@ -7,7 +7,7 @@ A typescript template
 ```bash
 $ pnpm create un
 # or
-$ pnpm create un [my-project] -t ts-starter
+$ pnpm create un [my-project] -t ts-starter-vite
 ```
 
 Init git hook(optional)
@@ -32,7 +32,7 @@ $ pnpm test
 
 ## Build
 
-Build your lib through `unbuild`
+Build your lib through `vite`
 
 ```shell
 $ pnpm build
@@ -46,3 +46,7 @@ Publish your library to npm：
 $ pnpm release
 $ npm publish
 ```
+
+## Different from ts-starter
+
+Bundling with vite, browser friendly.
