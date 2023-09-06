@@ -8,6 +8,7 @@ import {
   blue,
   cyan,
   green,
+  magenta,
   red,
   reset,
   yellow,
@@ -25,7 +26,7 @@ interface Framework {
   title: string
   value: string
 }
-const colorPreset = [yellow, cyan, blue, red, green]
+const colorPreset = [yellow, magenta, cyan, blue, red, green]
 const templateNames = readdirSync(resolve(__dirname, '../templates'))
 
 const FRAMEWORK: Array<Framework> = templateNames.map((t, i) => ({
