@@ -42,9 +42,9 @@
   "dependencies": {},
   "devDependencies": {
     "@antfu/eslint-config": "0.35.3",
-    "@types/node": "^18.17.6",
+    "@types/node": "^18.17.9",
     "bumpp": "8.2.1",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "esno": "0.16.3",
     "husky": "8.0.3",
     "taze": "^0.9.2",
