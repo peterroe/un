@@ -15,19 +15,19 @@
     "url": "git+https://github.com/peterroe/un.git"
   },
   "bugs": "https://github.com/peterroe/un/issues",
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
+      "require": "./dist/index.js",
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
     },
     "./*": "./*"
   },
   "scripts": {
-    "build": "unbuild",
+    "build": "tsup",
     "lint": "eslint \"**/*.{ts,js}\"",
     "fix": "eslint --fix \"**/*.{ts,js}\"",
     "start": "esno src/index.ts",
@@ -39,18 +39,20 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "dependencies": {},
   "devDependencies": {
     "@antfu/eslint-config": "0.35.3",
-    "@types/node": "^18.17.9",
+    "@types/node": "^18.17.12",
     "bumpp": "8.2.1",
     "eslint": "8.48.0",
     "esno": "0.16.3",
     "husky": "8.0.3",
     "taze": "^0.9.2",
+    "tsup": "^6.7.0",
     "typescript": "4.9.5",
-    "unbuild": "1.2.1",
     "vite": "4.4.9",
     "vitest": "0.28.5"
+  },
+  "dependencies": {
+    "consola": "^3.2.3"
   }
 }
