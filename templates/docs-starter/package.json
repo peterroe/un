@@ -19,6 +19,7 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
+    "unplugin-icons": "^0.17.0",
     "unplugin-vue-components": "^0.25.2",
     "v-viewer": "^3.0.11",
     "viewerjs": "^1.11.6",
