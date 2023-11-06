@@ -1,7 +1,7 @@
 {
   "name": "create-un",
   "version": "2.0.18",
-  "packageManager": "pnpm@7.33.6",
+  "packageManager": "pnpm@8.10.2",
   "description": "Create Universal template",
   "author": "peterroe",
   "license": "MIT",
@@ -49,7 +49,7 @@
     "@antfu/eslint-config": "0.35.3",
     "@types/fs-extra": "^9.0.13",
     "@types/minimist": "^1.2.2",
-    "@types/node": "18.17.18",
+    "@types/node": "18.18.2",
     "@types/prompts": "^2.4.4",
     "@vitest/coverage-c8": "0.24.5",
     "@vitest/ui": "^0.27.3",
@@ -61,7 +61,7 @@
     "kolorist": "^1.8.0",
     "minimist": "^1.2.8",
     "prompts": "^2.4.2",
-    "typescript": "4.9.5",
+    "typescript": "5.2.2",
     "unbuild": "0.8.11",
     "vite": "3.2.7",
     "vitest": "0.23.4"
