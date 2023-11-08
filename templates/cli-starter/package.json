@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.35.3",
-    "@types/node": "18.18.2",
+    "@types/node": "18.18.9",
     "@vitest/coverage-c8": "0.28.5",
     "bumpp": "8.2.1",
     "cac": "6.7.14",
