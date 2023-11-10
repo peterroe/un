@@ -8,7 +8,7 @@ export default defineBuildConfig({
   ],
   declaration: true,
   clean: true,
-  externals: [...builtinModules, ...Object.keys(pkg.dependencies)],
+  externals: [...builtinModules, ...Object.keys(pkg.dependencies || {})],
   rollup: {
     emitCJS: true,
   },

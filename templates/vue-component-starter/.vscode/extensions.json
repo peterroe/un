@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "vue.volar",
     "csstools.postcss",
-    "antfu.vite"
+    "antfu.vite",
+    "vue.vscode-typescript-vue-plugin",
   ]
 }

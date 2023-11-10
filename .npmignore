@@ -1,1 +1,5 @@
 node_modules
+*.yaml
+renovate.json
+LICENSE
+.eslintrc
