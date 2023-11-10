@@ -13,11 +13,29 @@ import {
   reset,
   yellow,
 } from 'kolorist'
+import pkg from '../package.json'
 
 const argv = minimist<{
   t?: string
   template?: string
+  h?: string
+  help?: string
+  v?: string
+  version?: string
 }>(process.argv.slice(2), { string: ['_'] })
+
+if (argv.h || argv.help) {
+  console.log(`creaet-un/${pkg.version}`)
+  console.log()
+  console.log('Usage:')
+  console.log('   $ pnpm create un [<projectName>]')
+  process.exit(0)
+}
+
+if (argv.v || argv.version) {
+  console.log(`creaet-un/${pkg.version}`)
+  process.exit(0)
+}
 
 const cwd = process.cwd()
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
