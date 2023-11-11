@@ -32,7 +32,7 @@
     "build": "vite build",
     "build:demo": "vite build --config playground/vite.config.ts",
     "preview": "pnpm build:demo && vite preview --config playground/vite.config.ts",
-    "deploy": "pnpm build:demo && gh-pages -d playground/dist",
+    "deploy:demo": "pnpm build:demo && gh-pages -d playground/dist",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
     "fix": "eslint --fix \"**/*.{vue,ts,js}\"",
     "release": "pnpm build && bumpp && npm publish",

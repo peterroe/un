@@ -25,6 +25,6 @@ export default defineConfig({
   base: `/${pkg.name}/`,
   mode: 'production',
   build: {
-    outDir: './docs',
+    outDir: './playground/dist',
   },
 })
