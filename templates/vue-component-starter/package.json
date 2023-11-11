@@ -28,11 +28,11 @@
     "./*": "./*"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --config playground/vite.config.ts",
     "build": "vite build",
-    "build:demo": "vite build --config demo/vite.config.ts",
-    "deploy:demo": "pnpm build:demo && gh-pages -d demo/dist",
-    "preview": "pnpm build:demo && vite preview --config demo/vite.config.ts",
+    "build:demo": "vite build --config playground/vite.config.ts",
+    "preview": "pnpm build:demo && vite preview --config playground/vite.config.ts",
+    "deploy": "pnpm build:demo && gh-pages -d playground/dist",
     "lint": "eslint \"**/*.{vue,ts,js}\"",
     "fix": "eslint --fix \"**/*.{vue,ts,js}\"",
     "release": "pnpm build && bumpp && npm publish",
@@ -55,6 +55,7 @@
     "husky": "8.0.3",
     "taze": "^0.9.2",
     "typescript": "5.2.2",
+    "unocss": "^0.57.3",
     "vite": "4.5.0",
     "vite-plugin-dts": "2.3.0",
     "vitest": "0.28.5",

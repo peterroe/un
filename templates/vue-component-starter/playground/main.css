@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MonaspaceRadon';
+    src: url('./public/MonaspaceRadon.ttf') format('truetype');
+}
+
+* {
+    font-family: 'MonaspaceRadon';
+}
