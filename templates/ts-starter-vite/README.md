@@ -1,6 +1,6 @@
 ## ts-starter-vite
 
-A typescript template
+A typescript template with `vite`
 
 ## Try it now!
 
@@ -49,4 +49,4 @@ $ npm publish
 
 ## Different from ts-starter
 
-Bundling with vite, browser friendly.
+Bundling with `vite`, browser friendly.

@@ -1,7 +1,7 @@
 {
   "name": "ts-starter-vite",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.33.6",
+  "packageManager": "pnpm@8.10.2",
   "description": "typescript-vite-template",
   "author": "peterroe",
   "license": "MIT",
@@ -40,14 +40,14 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.35.3",
-    "@types/node": "^18.18.2",
+    "@types/node": "^18.18.9",
     "bumpp": "8.2.1",
-    "eslint": "8.50.0",
+    "eslint": "8.53.0",
     "esno": "0.16.3",
     "husky": "8.0.3",
     "taze": "^0.9.2",
     "typescript": "5.2.2",
-    "vite": "4.4.9",
+    "vite": "4.5.0",
     "vite-plugin-dts": "2.3.0",
     "vitest": "0.28.5"
   }

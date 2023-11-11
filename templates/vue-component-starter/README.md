@@ -16,7 +16,7 @@ You can create yourself component quickly with it.
 
 ## Try it now!
 
-> vue-component-starter require Node >=14
+> vue-component-starter require Node >=16
 
 ### Github Template
 
@@ -78,9 +78,18 @@ $ npm publish
 
 For more details about publish, please check [bumpp](https://github.com/antfu/bumpp).
 
-## Deploy demo online
+## Deploy demo to github page
 
-You can debug your components online in `demo/App.vue`, and they can be deployed directly.
+1. Create a **public** repository in github. And keep the repository's name same as the `package.json`'s name
+
+2. Link the repository to the github repo
+
+```bash
+$ git init
+$ git remote add origin git@github.com:xxx/xxxx.git
+```
+
+3. You can debug your components online in `demo/App.vue`, and they can be deployed directly.
 
 Just run:
 

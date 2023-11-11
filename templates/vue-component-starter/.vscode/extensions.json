@@ -1,8 +1,9 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "johnsoncodehk.volar",
+    "vue.volar",
     "csstools.postcss",
-    "antfu.vite"
+    "antfu.vite",
+    "vue.vscode-typescript-vue-plugin",
   ]
 }
