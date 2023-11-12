@@ -106,7 +106,13 @@ async function init() {
     __dirname, '../templates/', framework,
   )
 
-  fse.copySync(templateDir, root)
+  fse.copySync(templateDir, root, {
+    filter: (src: string) => {
+      if (src.endsWith('node_modules') || src.endsWith('pnpm-lock.yaml'))
+        return false
+      return true
+    },
+  })
   const pkg = pkgRead(templateDir)
   pkg.name = targetDir
   switch (framework) {
