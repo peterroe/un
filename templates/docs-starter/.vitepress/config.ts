@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import type { DefaultTheme } from 'vitepress/types'
+import pkg from '../package.json'
 
 const title = 'Front End'
 const description = 'The docs template for the front end'
@@ -34,6 +35,7 @@ export default defineConfig({
   titleTemplate: title,
   description,
   outDir: './dist',
+  base: `/${pkg.name}/`,
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
     ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],

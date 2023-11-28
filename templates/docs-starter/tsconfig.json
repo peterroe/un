@@ -19,9 +19,6 @@
         "vitest/importMeta"
       ],
     },
-    "paths": {
-      "vite": ["node_modules/vite"]
-    },
     "exclude": [
       "dist/**",
       "node_modules/**",

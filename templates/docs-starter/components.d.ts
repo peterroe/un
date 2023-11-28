@@ -7,6 +7,9 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    GitHubLink: typeof import('./.vitepress/theme/components/GitHubLink.vue')['default']
+    GitHubStar: typeof import('./.vitepress/theme/components/GitHubStar.vue')['default']
     HomePage: typeof import('./.vitepress/theme/components/HomePage.vue')['default']
+    Quote: typeof import('./.vitepress/theme/components/Quote.vue')['default']
   }
 }
