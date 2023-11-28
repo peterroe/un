@@ -1,6 +1,6 @@
 {
   "name": "create-un",
-  "version": "2.0.26",
+  "version": "2.0.27",
   "packageManager": "pnpm@8.10.2",
   "description": "Create Universal template",
   "author": "peterroe",
