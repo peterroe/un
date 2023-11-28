@@ -5,6 +5,7 @@
   "description": "A command line tool template",
   "author": "peterroe",
   "license": "MIT",
+  "type": "module",
   "keywords": [
     "cli",
     "typescript",

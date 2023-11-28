@@ -5,6 +5,7 @@
   "description": "typescript-vite-template",
   "author": "peterroe",
   "license": "MIT",
+  "type": "module",
   "keywords": [
     "typescript"
   ],

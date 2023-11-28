@@ -5,6 +5,7 @@
   "description": "component based on vue3.x",
   "author": "peterroe",
   "license": "MIT",
+  "type": "module",
   "keywords": [
     "vue3",
     "component",
