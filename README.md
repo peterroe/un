@@ -5,8 +5,8 @@ Scaffold for creating templates
 Help you create: 
 
 * 🔧 Command line tool template
-* 🖖 Vue component template
-* 🦾 Typescript template
+* 🖖 Vue component lib template
+* 🦾 Typescript lib template
 * 🗂 monorepo template
 
 ## Try it now!

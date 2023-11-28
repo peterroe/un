@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'url'
-import { copySync, readdirSync } from 'fs-extra'
+import fse from 'fs-extra'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import {
@@ -13,7 +13,8 @@ import {
   reset,
   yellow,
 } from 'kolorist'
-import pkg from '../package.json'
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
 const argv = minimist<{
   t?: string
@@ -25,7 +26,7 @@ const argv = minimist<{
 }>(process.argv.slice(2), { string: ['_'] })
 
 if (argv.h || argv.help) {
-  console.log(`creaet-un/${pkg.version}`)
+  console.log(`creaet-un/${fse.readJsonSync(resolve(__dirname, '../package.json')).version}`)
   console.log()
   console.log('Usage:')
   console.log('   $ pnpm create un [<projectName>]')
@@ -33,19 +34,18 @@ if (argv.h || argv.help) {
 }
 
 if (argv.v || argv.version) {
-  console.log(`creaet-un/${pkg.version}`)
+  console.log(`creaet-un/${fse.readJsonSync(resolve(__dirname, '../package.json')).version}`)
   process.exit(0)
 }
 
 const cwd = process.cwd()
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
 interface Framework {
   title: string
   value: string
 }
 const colorPreset = [yellow, magenta, cyan, blue, red, green]
-const templateNames = readdirSync(resolve(__dirname, '../templates'))
+const templateNames = fse.readdirSync(resolve(__dirname, '../templates'))
 
 const FRAMEWORK: Array<Framework> = templateNames.map((t, i) => ({
   title: colorPreset[i](t),
@@ -106,7 +106,13 @@ async function init() {
     __dirname, '../templates/', framework,
   )
 
-  copySync(templateDir, root)
+  fse.copySync(templateDir, root, {
+    filter: (src: string) => {
+      if (src.endsWith('node_modules') || src.endsWith('pnpm-lock.yaml'))
+        return false
+      return true
+    },
+  })
   const pkg = pkgRead(templateDir)
   pkg.name = targetDir
   switch (framework) {

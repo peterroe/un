@@ -1,5 +1,4 @@
 node_modules
 dist
-.pnpm-debug.log
-coverage
+*.log
 .DS_Store

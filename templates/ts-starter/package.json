@@ -35,7 +35,7 @@
     "test": "vitest",
     "release": "pnpm build bumpp && npm publish",
     "typecheck": "tsc --noEmit",
-    "git-hook-init": "husky install && husky add .husky/pre-commit 'npm run lint && npm run typecheck'"
+    "git-hook-init": "git init && husky install && husky add .husky/pre-commit 'npm run lint && npm run typecheck'"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -47,10 +47,8 @@
     "eslint": "8.53.0",
     "esno": "0.16.3",
     "husky": "8.0.3",
-    "taze": "^0.9.2",
     "tsup": "^6.7.0",
     "typescript": "5.2.2",
-    "vite": "4.5.0",
     "vitest": "0.28.5"
   },
   "dependencies": {

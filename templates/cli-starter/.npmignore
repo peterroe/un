@@ -1,7 +1,0 @@
-node_modules
-.github
-.vscode
-.eslintrc
-LICENSE
-pnpm-lock.yaml
-renovate.json
