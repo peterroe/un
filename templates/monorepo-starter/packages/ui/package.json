@@ -31,7 +31,7 @@
     "@types/markdown-it-link-attributes": "^3.0.4",
     "@types/nprogress": "^0.2.3",
     "@vitejs/plugin-vue": "^4.4.1",
-    "@vue-macros/volar": "^0.8.4",
+    "@vue-macros/volar": "^0.18.0",
     "@vue/test-utils": "^2.4.1",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
