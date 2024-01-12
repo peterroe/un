@@ -47,7 +47,14 @@ interface Framework {
   value: string
 }
 const colorPreset = [yellow, magenta, cyan, blue, red, green]
-const templateNames = fse.readdirSync(resolve(__dirname, '../templates'))
+const templateNames = [
+  'cli-starter',
+  'docs-starter',
+  'monorepo-starter',
+  'ts-starter',
+  'ts-starter-vite',
+  'vue-component-starter',
+]
 
 const FRAMEWORK: Array<Framework> = templateNames.map((t, i) => ({
   title: colorPreset[i](t),
