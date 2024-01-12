@@ -3,6 +3,8 @@ import { join, resolve } from 'node:path'
 import { fileURLToPath } from 'url'
 import fse from 'fs-extra'
 import minimist from 'minimist'
+import { downloadTemplate } from 'giget'
+import ora from 'ora'
 import prompts from 'prompts'
 import {
   blue,
@@ -97,23 +99,20 @@ async function init() {
   const { framework = argTemplate, overwrite } = result
 
   const root = join(cwd, targetDir)
+
   if (overwrite)
     emptyDir(root)
-  else if (!fs.existsSync(root))
-    fs.mkdirSync(root, { recursive: true })
 
-  const templateDir = resolve(
-    __dirname, '../templates/', framework,
-  )
+  const spinner = ora('Download template...').start()
 
-  fse.copySync(templateDir, root, {
-    filter: (src: string) => {
-      if (src.endsWith('node_modules') || src.endsWith('pnpm-lock.yaml'))
-        return false
-      return true
-    },
+  await downloadTemplate(`github:peterroe/un/templates/${framework}`, {
+    dir: root,
+    forceClean: overwrite,
   })
-  const pkg = pkgRead(templateDir)
+
+  spinner.succeed()
+
+  const pkg = pkgRead(root)
   pkg.name = targetDir
   switch (framework) {
     case 'cli-starter':
