@@ -16,6 +16,26 @@ Help you create:
 $ pnpm create un
 ```
 
+Set your configuration:
+
+```shell
+? Project name: › un-project ✔
+? Select a framework: ›
+❯   cli-starter
+    docs-starter
+    monorepo-starter
+    ts-starter
+    ts-starter-vite
+    vue-component-starter
+✔ Select a framework: › cli-starter
+✔ Download template...
+
+Done. Now run:
+
+  cd un-project
+  pnpm install
+```
+
 ## Template Detail
 
 More: 
