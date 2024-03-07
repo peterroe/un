@@ -45,7 +45,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.35.3",
+    "@antfu/eslint-config": "0.43.1",
     "@types/node": "^18.18.9",
     "@vitejs/plugin-vue": "3.2.0",
     "@vue/test-utils": "2.4.1",
