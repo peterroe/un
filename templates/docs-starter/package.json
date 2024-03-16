@@ -17,7 +17,7 @@
     "@iconify-json/vscode-icons": "^1.1.29",
     "gh-pages": "6.1.0",
     "unocss": "^0.57.3",
-    "vitepress": "1.0.0-rc.31",
+    "vitepress": "1.0.0-rc.45",
     "vue": "^3.3.8"
   },
   "dependencies": {
