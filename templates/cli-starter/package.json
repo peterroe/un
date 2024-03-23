@@ -1,5 +1,5 @@
 {
-  "name": "cli-starter",
+  "name": "__pkg_name_placeholder__",
   "version": "1.0.0",
   "packageManager": "pnpm@8.10.2",
   "description": "A command line tool template",
@@ -15,12 +15,12 @@
     "typescript",
     "template"
   ],
-  "homepage": "https://github.com/peterroe/cli-starter#readme",
+  "homepage": "https://github.com/peterroe/__pkg_name_placeholder__#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peterroe/cli-starter.git"
+    "url": "git+https://github.com/peterroe/__pkg_name_placeholder__.git"
   },
-  "bugs": "https://github.com/peterroe/cli-starter/issues",
+  "bugs": "https://github.com/peterroe/__pkg_name_placeholder__/issues",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -33,7 +33,7 @@
     "./*": "./*"
   },
   "bin": {
-    "cli-starter": "./bin/index.mjs"
+    "__pkg_name_placeholder__": "./bin/index.mjs"
   },
   "scripts": {
     "build": "unbuild",

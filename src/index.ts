@@ -119,20 +119,9 @@ async function init() {
 
   spinner.succeed()
 
-  const pkg = pkgRead(root)
-  pkg.name = targetDir
-  switch (framework) {
-    case 'cli-starter':
-      pkg.bin = {
-        [targetDir]: './bin/index.mjs',
-      }
-      break
-    case 'vue-component-starter':
-      break
-    case 'ts-starter':
-      break
-  }
-  pkgWrite(root, pkg)
+  const dirName = targetDir.split('/').pop() || ''
+
+  replacePkgName(root, dirName)
 
   console.log('\nDone. Now run:\n')
   console.log(`  cd ${targetDir}`)
@@ -160,12 +149,18 @@ function emptyDir(dir: string) {
   }
 }
 
-function pkgRead(path: string) {
-  const pkg = JSON.parse(
-    fs.readFileSync(resolve(path, 'package.json'), 'utf-8'),
-  )
-  return pkg
-}
-function pkgWrite(root: string, pkg: any) {
-  fs.writeFileSync(resolve(root, 'package.json'), JSON.stringify(pkg, null, 2))
+function replacePkgName(root: string, target: string) {
+  // foreach root subfile
+  const files = fs.readdirSync(root)
+  for (const file of files) {
+    const filePath = resolve(root, file)
+
+    if (fs.statSync(filePath).isDirectory()) {
+      replacePkgName(filePath, target)
+    }
+    else {
+      const content = fs.readFileSync(filePath, 'utf8')
+      fs.writeFileSync(filePath, content.replaceAll('__pkg_name_placeholder__', target))
+    }
+  }
 }

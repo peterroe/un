@@ -1,5 +1,5 @@
 {
-  "name": "ts-starter",
+  "name": "__pkg_name_placeholder__",
   "version": "1.0.0",
   "packageManager": "pnpm@8.10.2",
   "description": "typescript-template",
@@ -14,12 +14,12 @@
     "typescript",
     "template"
   ],
-  "homepage": "https://github.com/peterroe/un#readme",
+  "homepage": "https://github.com/peterroe/__pkg_name_placeholder__#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peterroe/un.git"
+    "url": "git+https://github.com/peterroe/__pkg_name_placeholder__.git"
   },
-  "bugs": "https://github.com/peterroe/un/issues",
+  "bugs": "https://github.com/peterroe/__pkg_name_placeholder__/issues",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

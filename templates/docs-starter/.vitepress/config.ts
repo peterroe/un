@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import type { DefaultTheme } from 'vitepress/types'
-import pkg from '../package.json'
 
 const title = 'Front End'
 const description = 'The docs template for the front end'
@@ -35,10 +34,10 @@ export default defineConfig({
   titleTemplate: title,
   description,
   outDir: './dist',
-  base: `/${pkg.name}/`,
+  base: '/__pkg_name_placeholder__/',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
-    ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }],
+    ['link', { rel: 'icon', href: '/__pkg_name_placeholder__/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'alternate icon', href: '/__pkg_name_placeholder__/favicon.ico', type: 'image/png', sizes: '16x16' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: title }],
     ['meta', { name: 'og:description', content: description }],
@@ -70,11 +69,11 @@ export default defineConfig({
       '/guide/': SidebarGuide,
     },
     editLink: {
-      pattern: 'https://github.com/peterroe/un/edit/main/templates/docs-starter/:paht',
+      pattern: 'https://github.com/peterroe/__pkg_name_placeholder__/edit/main/:paht',
       text: 'Suggest changes to this page',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/peterroe/un' },
+      { icon: 'github', link: 'https://github.com/peterroe/__pkg_name_placeholder__' },
     ],
     footer: {
       message: 'Released under the MIT License.',

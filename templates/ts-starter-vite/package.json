@@ -1,5 +1,5 @@
 {
-  "name": "ts-starter-vite",
+  "name": "__pkg_name_placeholder__",
   "version": "1.0.0",
   "packageManager": "pnpm@8.10.2",
   "description": "typescript-vite-template",
@@ -13,12 +13,12 @@
   "keywords": [
     "typescript"
   ],
-  "homepage": "https://github.com/peterroe/un#readme",
+  "homepage": "https://github.com/peterroe/__pkg_name_placeholder__#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peterroe/un.git"
+    "url": "git+https://github.com/peterroe/__pkg_name_placeholder__.git"
   },
-  "bugs": "https://github.com/peterroe/un/issues",
+  "bugs": "https://github.com/peterroe/__pkg_name_placeholder__/issues",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
@@ -54,5 +54,6 @@
     "vite": "4.5.2",
     "vite-plugin-dts": "2.3.0",
     "vitest": "0.28.5"
-  }
+  },
+  "dependencies": {}
 }
