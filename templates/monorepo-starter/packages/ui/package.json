@@ -1,6 +1,6 @@
 {
+  "name": "@__pkg_name_placeholder__/ui",
   "type": "module",
-  "private": true,
   "packageManager": "pnpm@8.10.2",
   "scripts": {
     "build": "vite-ssg build",
@@ -51,7 +51,6 @@
     "vite-plugin-inspect": "^0.7.42",
     "vite-plugin-pages": "^0.28.0",
     "vite-plugin-pwa": "^0.14.7",
-    "vite-plugin-vue-component-preview": "^1.1.6",
     "vite-plugin-vue-inspector": "^3.7.2",
     "vite-plugin-vue-layouts": "^0.8.0",
     "vite-plugin-vue-markdown": "^0.22.6",

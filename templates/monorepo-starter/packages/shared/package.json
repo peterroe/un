@@ -1,5 +1,5 @@
 {
-  "name": "@peterroe/shared",
+  "name": "@__pkg_name_placeholder__/shared",
   "version": "1.1.1",
   "author": "peterroe",
   "license": "MIT",
@@ -23,5 +23,6 @@
   },
   "devDependencies": {
     "tsup": "^6.7.0"
-  }
+  },
+  "dependencies": {}
 }
