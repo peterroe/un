@@ -51,7 +51,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.35.3",
+    "@antfu/eslint-config": "0.43.1",
     "@types/node": "18.18.9",
     "@vitest/coverage-c8": "0.28.5",
     "bumpp": "8.2.1",
