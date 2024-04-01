@@ -67,7 +67,8 @@
     "vite-ssg": "^0.23.6",
     "vite-ssg-sitemap": "^0.6.1",
     "vitest": "^1.4.0",
-    "vue-tsc": "^2.0.7"
+    "vue-tsc": "^2.0.7",
+    "workbox-window": "^7.0.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

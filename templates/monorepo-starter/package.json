@@ -50,5 +50,8 @@
   },
   "dependencies": {
     "vite": "^4.5.0"
+  },
+  "resolutions": {
+    "@intlify/shared": "^9.7.0"
   }
 }
