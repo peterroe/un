@@ -45,4 +45,4 @@ More:
 * [docs-starter](./templates/docs-starter/README.md)
 * [ts-starter](./templates/ts-starter/README.md)
 * [ts-starter-vite](./templates/ts-starter-vite/README.md)
-* [monorepo-starter](./templates/monorepo/README.md)
+* [monorepo-starter](./templates/monorepo-starter/README.md)
