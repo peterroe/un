@@ -48,7 +48,7 @@
     "@antfu/eslint-config": "0.35.3",
     "@types/node": "^18.18.9",
     "@vitejs/plugin-vue": "3.2.0",
-    "@vue/test-utils": "2.4.1",
+    "@vue/test-utils": "2.4.6",
     "bumpp": "8.2.1",
     "eslint": "8.53.0",
     "gh-pages": "5.0.0",
