@@ -1,33 +1,33 @@
 {
   "name": "__pkg_name_placeholder__",
+  "type": "module",
   "version": "1.0.0",
   "packageManager": "pnpm@8.10.2",
   "description": "component based on vue3.x",
   "author": "peterroe",
   "license": "MIT",
-  "type": "module",
-  "keywords": [
-    "vue3",
-    "component",
-    "vite"
-  ],
   "homepage": "https://github.com/peterroe/__pkg_name_placeholder__#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/peterroe/__pkg_name_placeholder__.git"
   },
   "bugs": "https://github.com/peterroe/__pkg_name_placeholder__/issues",
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
+  "keywords": [
+    "vue3",
+    "component",
+    "vite"
+  ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.umd.js",
-      "import": "./dist/index.es.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.es.js"
     },
     "./*": "./*"
   },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite --config playground/vite.config.ts",
     "build": "vite build",
@@ -44,6 +44,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "dependencies": {
+    "vue": "3.3.8"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "0.35.3",
     "@types/node": "^18.18.9",
@@ -58,10 +61,7 @@
     "unocss": "^0.57.3",
     "vite": "4.5.0",
     "vite-plugin-dts": "2.3.0",
-    "vitest": "0.28.5",
+    "vitest": "^1.6.0",
     "vue-tsc": "1.8.22"
-  },
-  "dependencies": {
-    "vue": "3.3.8"
   }
 }
