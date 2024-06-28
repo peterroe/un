@@ -40,8 +40,8 @@ importers:
         specifier: 8.2.1
         version: 8.2.1
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       fs-extra:
         specifier: ^11.1.1
         version: 11.1.1
@@ -91,8 +91,8 @@ importers:
         specifier: 8.53.0
         version: 8.53.0
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -205,8 +205,8 @@ importers:
         specifier: 8.53.0
         version: 8.53.0
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -235,8 +235,8 @@ importers:
         specifier: 8.53.0
         version: 8.53.0
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -5180,8 +5180,8 @@ packages:
       - supports-color
     dev: true
 
-  /esno@0.16.3:
-    resolution: {integrity: sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==}
+  /esno@0.17.0:
+    resolution: {integrity: sha512-w78cQGlptQfsBYfootUCitsKS+MD74uR5L6kNsvwVkJsfzEepIafbvWsx2xK4rcFP4IUftt4F6J8EhagUxX+Bg==}
     hasBin: true
     dependencies:
       tsx: 3.14.0
