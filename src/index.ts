@@ -1,5 +1,5 @@
 import fs from 'node:fs'
-import { join, resolve } from 'node:path'
+import { resolve } from 'node:path'
 import { fileURLToPath } from 'url'
 import fse from 'fs-extra'
 import minimist from 'minimist'
@@ -73,7 +73,7 @@ async function init() {
         name: 'projectName',
         message: reset('Project name:'),
         initial: defaultTargetDir,
-        onState: (state: any) => {
+        onState: (state: { value: string; aborted: string; exited: string }) => {
           targetDir = state.value
         },
       },
@@ -105,7 +105,7 @@ async function init() {
   )
   const { framework = argTemplate, overwrite } = result
 
-  const root = join(cwd, targetDir)
+  const root = resolve(cwd, targetDir)
 
   if (overwrite)
     emptyDir(root)
@@ -119,7 +119,7 @@ async function init() {
 
   spinner.succeed()
 
-  const dirName = targetDir.split('/').pop() || ''
+  const dirName = root.split('/').pop() || ''
 
   replacePkgName(root, dirName)
 
