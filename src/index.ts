@@ -74,6 +74,9 @@ async function init() {
         message: reset('Project name:'),
         initial: defaultTargetDir,
         onState: (state: { value: string; aborted: string; exited: string }) => {
+          if (state.exited || state.aborted)
+            process.exit(0)
+
           targetDir = state.value
         },
       },
@@ -81,6 +84,10 @@ async function init() {
         type: () => (!fs.existsSync(targetDir) || isEmpty(targetDir)) ? null : 'confirm',
         name: 'overwrite',
         message: `Target directory "${targetDir}" is not empty. Remove existing files and continue?`,
+        onState: (state: { value: string; aborted: string; exited: string }) => {
+          if (state.exited || state.aborted)
+            process.exit(0)
+        },
       },
       {
         type: (_, { overwrite }: any) => {
@@ -89,6 +96,10 @@ async function init() {
           return null
         },
         name: 'overwriteChecker',
+        onState: (state: { value: string; aborted: string; exited: string }) => {
+          if (state.exited || state.aborted)
+            process.exit(0)
+        },
       },
       {
         type: argTemplate ? null : 'select',
@@ -100,6 +111,10 @@ async function init() {
           : reset('Select a framework:'),
         initial: 0,
         choices: FRAMEWORK,
+        onState: (state: { value: string; aborted: string; exited: string }) => {
+          if (state.exited || state.aborted)
+            process.exit(0)
+        },
       },
     ],
   )
