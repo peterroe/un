@@ -10,7 +10,6 @@ export default defineConfig({
   rules: [
     ['bg-var-band', { 'background-color': 'var(--vp-c-brand-1)' }],
     ['border-var-band', { border: '1px solid var(--vp-c-brand-1)' }],
-    [/^delay-(\d+)$/, ([, d]) => ({ 'animation-delay': `${d}ms` })],
   ],
   safelist: [
     ...iconSafeList,
