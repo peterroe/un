@@ -38,6 +38,8 @@
     "build": "unbuild",
     "stub": "unbuild --stub",
     "start": "esno src/index.ts",
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm --filter docs build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "release": "pnpm build && bumpp && npm publish",
