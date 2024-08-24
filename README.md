@@ -1,6 +1,8 @@
 ## create-un
 
-Scaffold for creating templates
+Quickly start a project using a template.
+
+Document: [https://create-un.vercel.app](https://create-un.vercel.app)
 
 Help you create: 
 

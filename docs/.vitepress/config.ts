@@ -35,16 +35,16 @@ const TsStarter: DefaultTheme.NavItemWithLink[] = [
 ]
 
 const Nav: DefaultTheme.NavItem[] = [
-  {
-    text: 'All',
-    items: [
-      {
-        text: 'All',
-        items: DocsStarter,
-      },
-    ],
-    activeMatch: '^/docs-starter/',
-  },
+  // {
+  //   text: 'All',
+  //   items: [
+  //     {
+  //       text: 'All',
+  //       items: DocsStarter,
+  //     },
+  //   ],
+  //   activeMatch: '^/docs-starter/',
+  // },
 ]
 
 const SidebarGuide: DefaultTheme.SidebarItem[] = [
@@ -215,11 +215,11 @@ export default defineConfig({
       '/vue-component-starter/': SidebarGuide,
     },
     editLink: {
-      pattern: 'https://github.com/peterroe/docs/edit/main/:path',
+      pattern: 'https://github.com/peterroe/un/edit/main/:path',
       text: 'Suggest changes to this page',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/peterroe/docs' },
+      { icon: 'github', link: 'https://github.com/peterroe/un' },
     ],
     footer: {
       message: 'Released under the MIT License.',

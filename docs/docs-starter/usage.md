@@ -371,6 +371,8 @@ Effect:
 
 <GitHubStar repo="peterroe/un"/>
 
+---
+
 ### NpmLink
 
 > A link with an npm icon
@@ -384,6 +386,8 @@ Syntax:
 Effect:
 
 <NpmLink name="create-un"/>
+
+---
 
 ### PermaLink
 
@@ -434,6 +438,8 @@ Effect:
 I know HTML, so I have no problem with writing. I have no problem with the technology, but I eventually got tired of it and felt like I was just making things difficult for myself, and I really think HTML makes it hard for me to proofread my work. Therefore, all of my proofreading work is previewed in the browser or the HTML renderer built into the text editor, and then previewed there.
 </Quote>
 
+---
+
 ### TableDemo
 
 > A component that can display code snippets and render results
@@ -474,6 +480,8 @@ Effect:
 </template>
 </TableDemo>
 
+---
+
 ### Tweet
 
 > A tweet with a dark mode support
@@ -492,6 +500,8 @@ Effect:
 <p lang="en" dir="ltr">The procrastination in preparing talks drove me to bring up the rework of the idea we had last year with <a href="https://twitter.com/posva?ref_src=twsrc%5Etfw">@posva</a> - animate Shiki tokens like Magic Move! 🪄<br><br>Found a much more reliable approach that could finally come out as a library (soon)<a href="https://t.co/b5SgQtTw2s">https://t.co/b5SgQtTw2s</a> <a href="https://t.co/s5LutlYmAK">pic.twitter.com/s5LutlYmAK</a></p>&mdash; Anthony Fu (@antfu7) <a href="https://twitter.com/antfu7/status/1760751386122211371?ref_src=twsrc%5Etfw">February 22, 2024</a>
 </Tweet>
 
+---
+
 ### VImg
 
 > A component that can display images, with dark mode support
@@ -505,6 +515,8 @@ Syntax:
 Effect:
 
 <VImg src="https://719283341.r.cdn36.com/peterroe/static-img/master/static/202408200129261.png" />
+
+---
 
 ### Youtube
 

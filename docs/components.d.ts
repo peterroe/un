@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ApiCompatibility: typeof import('./.vitepress/theme/components/ApiCompatibility.vue')['default']
+    CarbonDocument: typeof import('~icons/carbon/document')['default']
     CodeEditor: typeof import('./.vitepress/theme/components/CodeEditor.vue')['default']
     copy: typeof import('./.vitepress/theme/components/Quote copy.vue')['default']
     Document: typeof import('./.vitepress/theme/components/Document.vue')['default']
@@ -23,6 +24,7 @@ declare module 'vue' {
     LinkGrid: typeof import('./.vitepress/theme/components/LinkGrid.vue')['default']
     LogosBashIcon: typeof import('~icons/logos/bash-icon')['default']
     LogosHtml5: typeof import('~icons/logos/html5')['default']
+    LogosJavascript: typeof import('~icons/logos/javascript')['default']
     LogosMarkdown: typeof import('~icons/logos/markdown')['default']
     LogosNpmIcon: typeof import('~icons/logos/npm-icon')['default']
     LogosTypescriptIcon: typeof import('~icons/logos/typescript-icon')['default']
