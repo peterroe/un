@@ -11,9 +11,26 @@ export default defineConfig({
     //   // 'vitepress',
     //   // '@vue/repl',
     // ],
-    // include: [
-    //   '@vue/repl',
-    // ]
+    include: [
+      'lz-string',
+      'shiki-magic-move/vue',
+      'nanoid',
+      'unified',
+      'remark-parse',
+      'remark-rehype',
+      'rehype-stringify',
+      'hastscript',
+      'unist-util-visit',
+      'ofetch',
+      'shiki',
+      'mermaid',
+      '@shikijs/transformers',
+      'hast-util-to-html',
+      'hast-util-from-html',
+      '@vue/repl',
+      '@vue/repl/monaco-editor',
+      'filesize'
+    ]
   },
   ssr: {
     noExternal: ['@vue/repl'],
