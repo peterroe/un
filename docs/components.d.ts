@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     ApiCompatibility: typeof import('./.vitepress/theme/components/ApiCompatibility.vue')['default']
     CodeEditor: typeof import('./.vitepress/theme/components/CodeEditor.vue')['default']
+    copy: typeof import('./.vitepress/theme/components/Quote copy.vue')['default']
     Document: typeof import('./.vitepress/theme/components/Document.vue')['default']
     DownloadButton: typeof import('./.vitepress/theme/components/DownloadButton.vue')['default']
     FileTree: typeof import('./.vitepress/theme/components/FileTree.vue')['default']

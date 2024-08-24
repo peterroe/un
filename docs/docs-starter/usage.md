@@ -4,26 +4,26 @@ outline: deep
 
 # Usage
 
-一些内置的 markdown 语法和 Vue 组件，你可以直接在 md 文件中使用
+Some built-in markdown syntax and Vue components, you can use them directly in md files
 
-## markdown 插件
+## markdown plugins
 
 ### step-line
 
-语法：
+Syntax:
 
 ````md
 ```stepline
-- title: 原始代码
+- title: Original code
   code: |
     ```ts
-    // 定义一个简单的函数，用于计算两个数字的和
+    // Define a simple function for calculating the sum of two numbers
     function add(a: number, b: number): number {
         return a + b;
     }
     ```
-- title: 转换逻辑
-  desc: 直接使用导出的 `codeToHtml` 进行代码转换
+- title: Conversion logic
+  desc: Directly use the exported `codeToHtml` for code conversion
   code: |
     ```ts
     import { codeToHtml } from 'shiki'
@@ -38,19 +38,19 @@ outline: deep
 ```
 ````
 
-效果：
+Effect:
 
 ```stepline
-- title: 原始代码
+- title: Original code
   code: |
     ```ts
-    // 定义一个简单的函数，用于计算两个数字的和
+    // Define a simple function for calculating the sum of two numbers
     function add(a: number, b: number): number {
         return a + b;
     }
     ```
-- title: 转换逻辑
-  desc: 直接使用导出的 `codeToHtml` 进行代码转换
+- title: Conversion logic
+  desc: Directly use the exported `codeToHtml` for code conversion
   code: |
     ```ts
     import { codeToHtml } from 'shiki'
@@ -68,7 +68,7 @@ outline: deep
 
 ### pm
 
-语法：
+Syntax:
 
 ````md
 :pm-install{"name":"defu", "dev": true}
@@ -80,7 +80,7 @@ outline: deep
 :pm-x{"command": "giget unjs new-lib"}
 ````
 
-效果：
+Effect:
 
 :pm-install{"name":"defu", "dev": true}
 
@@ -94,7 +94,7 @@ outline: deep
 
 ### mermaid
 
-语法：
+Syntax:
 
 ````md
 ```mermaid
@@ -115,7 +115,7 @@ outline: deep
 ```
 ````
 
-效果：
+Effect:
 
 ```mermaid
   graph TD
@@ -138,7 +138,7 @@ outline: deep
 
 ### file-tree
 
-语法：
+Syntax:
 
 ````md
 ```filetree
@@ -152,7 +152,7 @@ outline: deep
 ```
 ````
 
-效果：
+Effect:
 
 ```filetree
 - dist
@@ -170,13 +170,13 @@ outline: deep
 
 > 引用 github 的用户 id，点击会跳转到对应用户的 github 主页
 
-语法：
+Syntax:
 
 ````md
 {@antfu}
 ````
 
-效果：
+Effect:
 
 {@antfu}
 
@@ -184,9 +184,9 @@ outline: deep
 
 ### magic-move
 
-> 在多个代码片段中过渡
+> Transition between multiple code snippets
 
-语法：
+Syntax:
 
 ````md
 ```vue [Options.vue]
@@ -242,7 +242,7 @@ const double = computed(() => count.value * 2)
 :::
 ````
 
-效果：
+Effect:
 
 :::magic-move 
 ```vue [Options.vue]
@@ -297,17 +297,17 @@ const double = computed(() => count.value * 2)
 ```
 :::
 
-## Vue 组件
+## Vue Components
 
 ### Code-Editor
 
-> 一个自带预览的可交互的 Vue3 代码编辑器。hash 值可以从编辑完之后，点击右上角的悬浮复制按钮获取
+> A Vue3 code editor with preview. The hash value can be obtained by clicking the floating copy button after editing, and can be used to preview the code
 
 ````md
 <CodeEditor hash="eNp9U11rE0EU/SvriG/djyS0SIiFpkTRBxUrPu1LmEx3p87OLDOTbLTkyY+qVCoKKlJpEUFEKz6Ivhh/jZvYJ/+Cd/bToHSf7r3n7Jwz997ZRmtx7IyGBLVRR5MoZn1NVn1uWZ0BHVmY9ZU65yNNxtrGhGsifZTBQFCjwBoRqajgQGk4DR/liJXQgQ6h1vI8H1khoUGoIW2atKCMI8bNyaHWcdt1kyRxkpYjZOACy3Ph7JJayIHgKdu25gfv0+mb399300/T4w8vf307OH61N3/wNb13Z/7l0LLtmi4J1pWVhued+dtLkW9SxiA7fX5lzWuuQ8FdlEv37xdyr5/MDnfSp7vp40fpj7sLQphKzIiFx+bcZXNlfCuXgFBCdNYEpVS31+o2mv9KzZ7vzPY/Lkgdvfg5fZa+fZd+3psfPVzQNBMpE+hmpZwJN5eNnuDaVvQ2gcpK3Xj4smn2OQ6FMRfRwYCR2mASUg1pSV/duHGh45pfyrmb4eQr4sKOQGTgYnPQEtIKC75JA2dLCQ5rtW2oPsIiiikj8kqsYWGUj9pWhhisz5hILmU1LYdkqazjkOCb/6lvqbGp+eiqJIrIEditMN2XAdE53Nu4bNpUg5EYDM1dTwCvESXY0HjMad0hh/bA2le8zO3FKBZSUx5cV72xJty8gsqoYU4yvo/gba2fcPXabstpZf/5fIImfwD6EjRD"/>
 ````
 
-效果：
+Effect:
 
 <CodeEditor hash="eNp9U11rE0EU/SvriG/djyS0SIiFpkTRBxUrPu1LmEx3p87OLDOTbLTkyY+qVCoKKlJpEUFEKz6Ivhh/jZvYJ/+Cd/bToHSf7r3n7Jwz997ZRmtx7IyGBLVRR5MoZn1NVn1uWZ0BHVmY9ZU65yNNxtrGhGsifZTBQFCjwBoRqajgQGk4DR/liJXQgQ6h1vI8H1khoUGoIW2atKCMI8bNyaHWcdt1kyRxkpYjZOACy3Ph7JJayIHgKdu25gfv0+mb399300/T4w8vf307OH61N3/wNb13Z/7l0LLtmi4J1pWVhued+dtLkW9SxiA7fX5lzWuuQ8FdlEv37xdyr5/MDnfSp7vp40fpj7sLQphKzIiFx+bcZXNlfCuXgFBCdNYEpVS31+o2mv9KzZ7vzPY/Lkgdvfg5fZa+fZd+3psfPVzQNBMpE+hmpZwJN5eNnuDaVvQ2gcpK3Xj4smn2OQ6FMRfRwYCR2mASUg1pSV/duHGh45pfyrmb4eQr4sKOQGTgYnPQEtIKC75JA2dLCQ5rtW2oPsIiiikj8kqsYWGUj9pWhhisz5hILmU1LYdkqazjkOCb/6lvqbGp+eiqJIrIEditMN2XAdE53Nu4bNpUg5EYDM1dTwCvESXY0HjMad0hh/bA2le8zO3FKBZSUx5cV72xJty8gsqoYU4yvo/gba2fcPXabstpZf/5fIImfwD6EjRD"/>
 
@@ -315,13 +315,13 @@ const double = computed(() => count.value * 2)
 
 ### Document
 
-> 带有文档 Icon 的链接
+> A link with a document icon
 
 ````md
 <Document link="https://developer.chrome.com/docs/workbox/" name="workbox" />
 ````
 
-效果：
+Effect:
 
 <Document link="https://developer.chrome.com/docs/workbox/" name="workbox" />
 
@@ -329,13 +329,13 @@ const double = computed(() => count.value * 2)
 
 ### DownloadButton
 
-> 下载按钮
+> A download button
 
 ````md
 <DownloadButton src="https://peterroe.icu/favicon.ico"/>
 ````
 
-效果：
+Effect:
 
 <DownloadButton src="https://peterroe.icu/favicon.ico"/>
 
@@ -343,15 +343,15 @@ const double = computed(() => count.value * 2)
 
 ### GitHubLink
 
-> 带有 GitHub Icon 的链接
+> A link with a GitHub icon
 
-语法：
+Syntax:
 
 ````md
 <GitHubLink repo="peterroe/un"/>
 ````
 
-效果：
+Effect:
 
 <GitHubLink repo="peterroe/un"/>
 
@@ -359,37 +359,37 @@ const double = computed(() => count.value * 2)
 
 ### GitHubStar
 
-> 带有 GitHub Icon 的链接
+> A link with a GitHub icon
 
-语法：
+Syntax:
 
 ````md
 <GitHubStar repo="peterroe/un"/>
 ````
 
-效果：
+Effect:
 
 <GitHubStar repo="peterroe/un"/>
 
 ### NpmLink
 
-> 带有 npm Icon 的链接
+> A link with an npm icon
 
-语法：
+Syntax:
 
 ````md
 <NpmLink name="create-un"/>
 ````
 
-效果：
+Effect:
 
 <NpmLink name="create-un"/>
 
 ### PermaLink
 
-> 引用一段 GitHub 的代码
+> A link to a GitHub code snippet
 
-用法
+Usage
 
 :::code-group
 ````md
@@ -409,7 +409,7 @@ const permaLinkList = [
 ```
 :::
 
-效果：
+Effect:
 
 <PermaLink
     id="VITE_PLUGIN_JSON5"
@@ -420,23 +420,23 @@ const permaLinkList = [
 
 ### Quote
 
-> 引用一段文字，并显示作者和来源
+> A quote with an author and source
 
 ````md
 <Quote author="John Gruber" href="https://twitter.com/gruber">
-我知道 HTML，所以在写作上没有问题。我在技术上也没有问题，但最终还是厌倦了，感觉就像是在给自己找麻烦，而且我真的觉得 HTML 让我很难校对我的作品。因此，我所有的校对工作都是在浏览器或文本编辑器内置的HTML渲染器中预览，然后在那里预览。
+I know HTML, so I have no problem with writing. I have no problem with the technology, but I eventually got tired of it and felt like I was just making things difficult for myself, and I really think HTML makes it hard for me to proofread my work. Therefore, all of my proofreading work is previewed in the browser or the HTML renderer built into the text editor, and then previewed there.
 </Quote>
 ````
 
-效果：
+Effect:
 
 <Quote author="John Gruber" href="https://twitter.com/gruber">
-我知道 HTML，所以在写作上没有问题。我在技术上也没有问题，但最终还是厌倦了，感觉就像是在给自己找麻烦，而且我真的觉得 HTML 让我很难校对我的作品。因此，我所有的校对工作都是在浏览器或文本编辑器内置的HTML渲染器中预览，然后在那里预览。
+I know HTML, so I have no problem with writing. I have no problem with the technology, but I eventually got tired of it and felt like I was just making things difficult for myself, and I really think HTML makes it hard for me to proofread my work. Therefore, all of my proofreading work is previewed in the browser or the HTML renderer built into the text editor, and then previewed there.
 </Quote>
 
 ### TableDemo
 
-> 一个可以展示代码片段和渲染结果的组件
+> A component that can display code snippets and render results
 
 ````md
 <TableDemo>
@@ -456,7 +456,7 @@ const permaLinkList = [
 </TableDemo>
 ````
 
-效果：
+Effect:
 
 <TableDemo>
 <template #fence>
@@ -476,9 +476,9 @@ const permaLinkList = [
 
 ### Tweet
 
-> 引用一段推文，暗黑模式支持
+> A tweet with a dark mode support
 
-语法：
+Syntax:
 
 ````md
 <Tweet>
@@ -486,7 +486,7 @@ const permaLinkList = [
 </Tweet>
 ````
 
-效果：
+Effect:
 
 <Tweet>
 <p lang="en" dir="ltr">The procrastination in preparing talks drove me to bring up the rework of the idea we had last year with <a href="https://twitter.com/posva?ref_src=twsrc%5Etfw">@posva</a> - animate Shiki tokens like Magic Move! 🪄<br><br>Found a much more reliable approach that could finally come out as a library (soon)<a href="https://t.co/b5SgQtTw2s">https://t.co/b5SgQtTw2s</a> <a href="https://t.co/s5LutlYmAK">pic.twitter.com/s5LutlYmAK</a></p>&mdash; Anthony Fu (@antfu7) <a href="https://twitter.com/antfu7/status/1760751386122211371?ref_src=twsrc%5Etfw">February 22, 2024</a>
@@ -494,15 +494,15 @@ const permaLinkList = [
 
 ### VImg
 
-> 一个可以展示图片的组件，暗黑模式支持
+> A component that can display images, with dark mode support
 
-语法：
+Syntax:
 
 ````md
 <VImg src="https://719283341.r.cdn36.com/peterroe/static-img/master/static/202408200129261.png" />
 ````
 
-效果：
+Effect:
 
 <VImg src="https://719283341.r.cdn36.com/peterroe/static-img/master/static/202408200129261.png" />
 
@@ -512,6 +512,6 @@ const permaLinkList = [
 <YouTube v="ZbFKsriOJm0" />
 ````
 
-效果：
+Effect:
 
 <YouTube v="ZbFKsriOJm0" />

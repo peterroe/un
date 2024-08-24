@@ -1,8 +1,8 @@
 # cli-starter
 
-快递搭建一个 cli 项目
+Set up a cli project
 
-## 安装
+## Install
 
 ```bash
 $ pnpm create un

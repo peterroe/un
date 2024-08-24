@@ -1,8 +1,8 @@
 # vue-component-starter
 
-快递搭建一个 vue 组件项目
+Quickly set up a vue component project
 
-## 安装
+## Installation
 
 ```bash
 $ pnpm create un

@@ -1,8 +1,8 @@
 # ts-starter
 
-快递搭建一个 ts 项目
+Set up a ts project
 
-## 安装
+## Install
 
 ```bash
 $ pnpm create un

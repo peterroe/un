@@ -1,8 +1,8 @@
 # docs-starter
 
-使用 [vitepress](https://vitepress.dev/) 搭建的文档项目，内置了丰富的 vue 组件和 markdown 插件
+Set up a docs project with [vitepress](https://vitepress.dev/), built-in rich vue components and markdown plugins
 
-## 安装
+## Install
 
 ```bash
 $ pnpm create un

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "文档模版"
+title: "Create-un"
 
 hero:
   image:
@@ -17,19 +17,19 @@ hero:
 
 features:
   - title: Docs Starter
-    details: 搭建一个内置丰富插件的 vitepress 项目
+    details: Set up a vitepress project with built-in rich plugins
     link: /docs-starter/
     linkText: Getting Started
   - title: Cli Starter
-    details: 搭建一个 cli 项目
+    details: Set up a cli project
     link: /cli-starter/
     linkText: Getting Started
   - title: Ts Starter
-    details: 搭建一个 ts 项目
+    details: Set up a ts project
     link: /ts-starter/
     linkText: Getting Started
   - title: Vue Component Starter
-    details: 搭建一个 vue 组件项目
+    details: Set up a vue component project
     link: /vue-component-starter/
     linkText: "Learn more"
 ---
