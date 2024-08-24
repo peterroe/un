@@ -1,0 +1,259 @@
+.vp-code-group .tabs
+  flex-wrap: wrap
+  label
+    background-color transparent
+
+.vp-code-group .lang
+  display: none
+
+// rule: ```stepline
+.step-line
+  counter-reset: step
+  .step-line-item
+    padding-bottom: 30px
+    position: relative
+    counter-increment: step
+    &:last-child
+      padding-bottom: 0
+    &:before
+      content: counter(step);
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      font-size: 12px;
+      background: var(--vp-c-bg);
+      border: 1px solid var(--vp-c-brand-1);
+      display: inline-flex;
+      justify-content: center;
+      align-items: end;
+      border-radius: 5px;
+    .desc
+      margin-top: 10px;
+      padding-left: 40px;
+      min-height: 15px
+    .title
+      padding-left: 40px;
+      margin: 0px !important;
+      height: 28px;
+      line-height: 28px;
+    &:after
+      content: '';
+      position: absolute;
+      top: 20px;
+      bottom: 0px;
+      left: 14px;
+      width: 1px;
+      z-index: -1;
+      background-color: var(--vp-c-brand-1)
+    &:last-child:after
+      bottom: 50px;
+
+.dark
+  .step-line-item
+    [class*='language-'],
+    [class*='language'],
+    .tabs
+      background: #161617
+
+
+table {
+  width: 100% !important;
+  display: table;
+}
+
+/* .custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand);
+} */
+
+.VPHero .image-bg {
+  z-index: 1;
+  opacity: 0.8;
+  transition: opacity 1s ease;
+}
+
+.VPBadge {
+  height: 28px;
+  line-height: 28px;  
+}
+
+.VPHero .image-container:hover .image-bg {
+  opacity: 0.2;
+}
+
+.vp-doc [class*='language-'] > span.lang.icon {
+  font-size: 20px;
+  top: 10px;
+  /* opacity: 0.; */
+  right: 10px;
+}
+
+.vp-doc h3 {
+  word-break: break-all;  
+}
+
+.vp-doc ol {
+  padding-left: 2rem  
+}
+
+/* Lang logo */
+.dark .vp-doc [class*='language-'] > span.lang.icon {
+  opacity: 0.7
+}
+
+.dark .vp-code-group .tabs svg,
+.dark .vp-code-group .tabs .lang-icon, {
+  opacity: 0.7
+}
+
+
+/**
+ * VitePress: Custom fix
+ * -------------------------------------------------------------------------- */
+
+/*
+  Use lighter colors for links in dark mode for a11y.
+  Also specify some classes twice to have higher specificity
+  over scoped class data attribute.
+*/
+.dark .vp-doc a,
+.dark .vp-doc a > code,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
+.dark .link.link:hover,
+.dark .link.link.active,
+.dark .edit-link-button.edit-link-button,
+.dark .pager-link .title {
+  color: var(--vp-c-brand-lighter);
+}
+
+.dark .vp-doc a:hover,
+.dark .vp-doc a > code:hover {
+  color: var(--vp-c-brand-lightest);
+  opacity: 1;
+}
+
+/* Transition by color instead of opacity */
+.dark .vp-doc .custom-block a {
+  transition: color 0.25s;
+}
+
+
+/* VitePress Search */
+.VPLocalSearchBox .result {
+  --vp-c-bg-search-result: var(--vp-c-bg);
+  background: var(--vp-c-bg-search-result) !important;
+  padding: 4px !important;
+  border: 1px solid var(--vp-c-divider) !important;
+}
+.VPLocalSearchBox .result.selected {
+  --vp-c-bg-search-result: var(--vp-c-bg-soft) !important;
+}
+.VPLocalSearchBox .result .excerpt-gradient-top {
+  background: linear-gradient(var(--vp-c-bg-search-result),transparent) !important;
+}
+.VPLocalSearchBox .result .excerpt-gradient-bottom {
+  background: linear-gradient(transparent,var(--vp-c-bg-search-result)) !important;
+}
+.VPLocalSearchBox .title-icon {
+  display: none;
+}
+.VPLocalSearchBox .excerpt-wrapper {
+  margin-top: 4px;
+}
+
+.VPNavBarMenu a span {
+  display: flex;
+}
+
+.VPNavBar {
+  border-bottom: none !important;
+}
+
+.VPContent {
+  transition: all 0.3s
+}
+
+.page-active {
+  opacity: 0.5;
+  filter: blur(1rem);
+}
+
+// .VPSidebar .curtain {
+//   background-color: var(--vp-c-bg) !important;
+// }
+
+html {
+  --text-rule: 10%
+}
+
+.v-popper--theme-dropdown .v-popper__inner {
+  background: var(--vp-code-block-bg);
+  color: var(--vp-c-text-1);
+  border-color: var(--vp-c-border);
+}
+
+.v-popper--theme-dropdown .v-popper__arrow-outer {
+  border-color: var(--vp-c-border);
+}
+
+.v-popper--theme-dropdown .v-popper__arrow-inner {
+  border-color: var(--vp-code-block-bg);
+}
+
+.vp-code .highlighted-word {
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  padding: 1px 3px;
+  margin: -1px -3px;
+  border-radius: 4px;
+}
+
+
+// markdown-magic-link
+.markdown-magic-link {
+  display: inline-flex;
+  align-items: center;
+  background: #8882;
+  transform: translateY(3px);
+  line-height: 100%;
+  color: var(--fg-light) !important;
+  --uno: gap-1 transition rounded px1.5 py1 important-border-0 font-condensed;
+}
+
+.markdown-magic-link:hover {
+  background: #8883;
+  color: var(--fg) !important;
+}
+
+.markdown-magic-link-image {
+  display: inline-block;
+  height: 1.1em;
+  width: 1.1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+}
+
+.markdown-magic-link.markdown-magic-link-github-at {
+  transform: translateY(6px);
+  --uno: pl-0 py-0 pr2 uppercase text-sm gap-1.2 rounded-full;
+}
+
+.markdown-magic-link.markdown-magic-link-github-at .markdown-magic-link-image {
+  height: 1.6em;
+  width: 1.6em;
+  border-radius: 50%;
+}
+
+// npm-packages
+.npm-packages
+  .vp-doc
+    hr
+      width: 50px;
+      margin: 2em auto;
+    h3
+      display: flex;
+      align-items: center;
+      a.inline-flex
+        margin-left: 0.5em;
