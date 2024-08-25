@@ -2,7 +2,7 @@
 
 Quickly start a project using a template.
 
-Document: [https://create-un.vercel.app](https://create-un.vercel.app)
+Document: [https://create-un.netlify.app](https://create-un.netlify.app)
 
 Help you create: 
 

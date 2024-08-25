@@ -168,7 +168,7 @@ Effect:
 
 ### magic-link
 
-> 引用 github 的用户 id，点击会跳转到对应用户的 github 主页
+> Quote a GitHub user ID, clicking it will redirect to the corresponding user's GitHub profile
 
 Syntax:
 
