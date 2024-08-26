@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ApiCompatibility: typeof import('./.vitepress/theme/components/ApiCompatibility.vue')['default']
+    CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CodeEditor: typeof import('./.vitepress/theme/components/CodeEditor.vue')['default']
     Document: typeof import('./.vitepress/theme/components/Document.vue')['default']
     DownloadButton: typeof import('./.vitepress/theme/components/DownloadButton.vue')['default']

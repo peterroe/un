@@ -24,10 +24,10 @@ import 'uno.css'
 let homePageStyle: HTMLStyleElement | undefined
 
 const deployImg = h('a',{
-  href: 'https://app.netlify.com/sites/fe-book/deploys',
+  href: 'https://app.netlify.com/sites/create-un/deploys',
   style: 'margin-left: 8px'
 }, h('img', {
-  src: 'https://api.netlify.com/api/v1/badges/c1d4bddd-4dfc-49cc-849d-8cc8fb1ccab7/deploy-status?branch=main&bgColor=red'
+  src: 'https://api.netlify.com/api/v1/badges/181a8665-47d5-43b0-811b-7714f98f96c7/deploy-status?branch=main&bgColor=red'
 }, 'Netlify Status'))
 
 const playground = h('a',{

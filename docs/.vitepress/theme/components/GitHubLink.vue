@@ -4,7 +4,7 @@ defineProps<{ repo: string }>()
 
 <template>
   <span class="inline-flex items-center rounded border" style="vertical-align: sub;">
-    <i-carbon-logo-github class="inline-block opacity-70" />
+    <carbon-logo-github class="inline-block opacity-70" />
     <a
       class="ml-1"
       :href="`https://github.com/${repo}`"
