@@ -38,7 +38,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue-macros/volar": "^0.18.17",
     "@vue/test-utils": "^2.4.5",
-    "critters": "^0.0.22",
+    "critters": "^0.0.25",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",
