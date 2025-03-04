@@ -48,14 +48,14 @@
     "consola": "^3.2.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.35.3",
+    "@antfu/eslint-config": "4.4.0",
     "@types/node": "^18.18.9",
     "bumpp": "8.2.1",
     "eslint": "8.53.0",
     "esno": "0.16.3",
     "husky": "8.0.3",
     "tsup": "^6.7.0",
-    "typescript": "5.2.2",
-    "vitest": "1.6.0"
+    "typescript": "5.8.2",
+    "vitest": "3.0.7"
   }
 }

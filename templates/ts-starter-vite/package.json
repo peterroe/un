@@ -45,15 +45,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@antfu/eslint-config": "0.35.3",
+    "@antfu/eslint-config": "4.4.0",
     "@types/node": "^18.18.9",
     "bumpp": "8.2.1",
     "eslint": "8.53.0",
     "esno": "0.16.3",
     "husky": "8.0.3",
-    "typescript": "5.2.2",
-    "vite": "4.5.2",
+    "typescript": "5.8.2",
+    "vite": "5.4.14",
     "vite-plugin-dts": "2.3.0",
-    "vitest": "^1.6.0"
+    "vitest": "3.0.7"
   }
 }
