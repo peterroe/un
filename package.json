@@ -1,6 +1,6 @@
 {
   "name": "create-un",
-  "version": "2.0.38",
+  "version": "2.0.39",
   "packageManager": "pnpm@8.10.2",
   "description": "Create Universal template",
   "author": "peterroe",
@@ -42,7 +42,7 @@
     "docs:build": "pnpm --filter docs build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "release": "pnpm build && bumpp && npm publish",
+    "release": "pnpm build && bumpp && pnpm publish --provenance",
     "typecheck": "tsc --noEmit",
     "minor": "taze minor -r",
     "up:minor": "taze minor -r -w"
