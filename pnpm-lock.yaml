@@ -40,8 +40,8 @@ importers:
         specifier: 8.2.1
         version: 8.2.1
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       fs-extra:
         specifier: ^11.1.1
         version: 11.1.1
@@ -290,8 +290,8 @@ importers:
         specifier: 9.21.0
         version: 9.21.0
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -554,8 +554,8 @@ importers:
         specifier: 9.21.0
         version: 9.21.0
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -584,8 +584,8 @@ importers:
         specifier: 9.21.0
         version: 9.21.0
       esno:
-        specifier: 0.16.3
-        version: 0.16.3
+        specifier: 0.17.0
+        version: 0.17.0
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -10267,8 +10267,8 @@ packages:
       - supports-color
     dev: true
 
-  /esno@0.16.3:
-    resolution: {integrity: sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==}
+  /esno@0.17.0:
+    resolution: {integrity: sha512-w78cQGlptQfsBYfootUCitsKS+MD74uR5L6kNsvwVkJsfzEepIafbvWsx2xK4rcFP4IUftt4F6J8EhagUxX+Bg==}
     hasBin: true
     dependencies:
       tsx: 3.14.0
@@ -11208,18 +11208,12 @@ packages:
     resolution: {integrity: sha512-kGzZ3LWWQcGIAmg6iWvXn0ei6WDtV26wzHRMwDSzmAbcXrTEXxHy6IehI6/4eT6VRKyMP1eF1VqwrVUmE/LR7A==}
     dependencies:
       resolve-pkg-maps: 1.0.0
-    dev: true
-
-  /get-tsconfig@4.7.2:
-    resolution: {integrity: sha512-wuMsz4leaj5hbGgg4IvDU0bqJagpftG5l5cXIAvo8uZrqn0NJqwtfupTN00VnkQJPcIRrxYrm1Ue24btpCha2A==}
-    dependencies:
-      resolve-pkg-maps: 1.0.0
-    dev: true
 
   /get-tsconfig@4.7.6:
     resolution: {integrity: sha512-ZAqrLlu18NbDdRaHq+AKXzAmqIUPswPWKUchfytdAjiRFnCe5ojG2bstg6mRiZabkKfCoL/e98pbBELIV/YCeA==}
     dependencies:
       resolve-pkg-maps: 1.0.0
+    dev: true
 
   /gh-pages@5.0.0:
     resolution: {integrity: sha512-Nqp1SjkPIB94Xw/3yYNTUL+G2dxlhjvv1zeN/4kMC1jfViTEqhtVz/Ba1zSXHuvXCN9ADNS1dN4r5/J/nZWEQQ==}
@@ -17690,7 +17684,7 @@ packages:
     hasBin: true
     dependencies:
       esbuild: 0.18.20
-      get-tsconfig: 4.7.2
+      get-tsconfig: 4.10.0
       source-map-support: 0.5.21
     optionalDependencies:
       fsevents: 2.3.3
@@ -17702,7 +17696,7 @@ packages:
     hasBin: true
     dependencies:
       esbuild: 0.23.1
-      get-tsconfig: 4.7.6
+      get-tsconfig: 4.10.0
     optionalDependencies:
       fsevents: 2.3.3
 

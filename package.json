@@ -64,7 +64,7 @@
     "@vitest/coverage-v8": "3.0.7",
     "@vitest/ui": "3.0.7",
     "bumpp": "8.2.1",
-    "esno": "0.16.3",
+    "esno": "0.17.0",
     "fs-extra": "^11.1.1",
     "husky": "8.0.3",
     "kolorist": "^1.8.0",
