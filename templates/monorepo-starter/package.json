@@ -19,8 +19,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "main": "./dist/index.mjs",
@@ -38,6 +38,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "dependencies": {
+    "vite": "5.4.14"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "4.4.0",
     "@types/node": "18.18.9",
@@ -47,9 +50,6 @@
     "typescript": "5.8.2",
     "unbuild": "3.5.0",
     "vitest": "3.0.7"
-  },
-  "dependencies": {
-    "vite": "5.4.14"
   },
   "resolutions": {
     "@intlify/shared": "^9.7.0"

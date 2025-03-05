@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import { presetAttributify, presetIcons, presetUno } from 'unocss'
 import vue from '@vitejs/plugin-vue'
+import { presetAttributify, presetIcons, presetUno } from 'unocss'
 import UnoCSS from 'unocss/vite'
+import { defineConfig } from 'vite'
 import pkg from '../package.json'
 
 export default defineConfig({

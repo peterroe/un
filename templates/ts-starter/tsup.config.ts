@@ -1,4 +1,4 @@
-import { builtinModules } from 'module'
+import { builtinModules } from 'node:module'
 import { defineConfig } from 'tsup'
 
 import pkg from './package.json'

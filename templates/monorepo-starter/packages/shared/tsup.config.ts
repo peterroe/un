@@ -1,4 +1,4 @@
-import { builtinModules } from 'module'
+import { builtinModules } from 'node:module'
 import { defineConfig } from 'tsup'
 import pkg from './package.json'
 
@@ -7,7 +7,7 @@ const external = [
   ...Object.keys(pkg.dependencies || {}),
 ]
 export default defineConfig({
-  entry: [ 'src/index.ts' ],
+  entry: ['src/index.ts'],
   splitting: false,
   external,
   clean: true,
