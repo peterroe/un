@@ -1,16 +1,16 @@
+import type { Router } from 'vitepress/types'
 // https://vitepress.dev/guide/custom-theme
 import type { App } from 'vue'
-import { h, watch } from 'vue'
+import VueViewer from 'v-viewer'
 import Theme from 'vitepress/theme'
+import { h, watch } from 'vue'
+import HomePage from './components/HomePage.vue'
 import './rainbow.css'
 import './vars.css'
 import './main.css'
-import './overrides.css'
+import './overrides.stylus'
 import 'uno.css'
 import 'viewerjs/dist/viewer.css'
-import VueViewer from 'v-viewer'
-import type { Router } from 'vitepress/types'
-import HomePage from './components/HomePage.vue'
 
 let homePageStyle: HTMLStyleElement | undefined
 
@@ -21,7 +21,7 @@ export default {
       'home-features-after': () => h(HomePage),
     })
   },
-  enhanceApp({ app, router }: { app: App; router: Router }) {
+  enhanceApp({ app, router }: { app: App, router: Router }) {
     if (typeof window === 'undefined')
       return
 

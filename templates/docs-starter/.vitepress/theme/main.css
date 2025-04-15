@@ -8,48 +8,6 @@ html:not(.dark) [img-dark] {
   display: none;
 }
 
-/** dark mode fro v-viewer */
-
-/** fonts */
-.shiki code span {
-  font-family: 'MonaspaceNeon';
-}
-
-* {
-  font-family: 'MonaspaceNeon';
-}
-
-.my-mermaid * {
-  font-family: 'MonaspaceRadon'
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'MonaspaceRadon'
-}
-
-main p, main a, main li, code {
-  font-family: 'MonaspaceRadon'
-}
-
-svg {
-  display: inline-block;
-}
-
-@font-face {
-  font-family: 'MonaspaceRadon';
-  src: url('/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'MonaspaceKrypton';
-  src: url('/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'MonaspaceNeon';
-  src: url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2');
-}
-
 #nprogress {
   pointer-events: none;
   position: fixed;
