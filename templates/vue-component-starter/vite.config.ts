@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/index.ts',
-      formats: ['es', 'umd'],
+      formats: ['es', 'cjs'],
       // the name expose in umd mode
       name: pkg.name,
       fileName: format => `index.${format}.js`,
