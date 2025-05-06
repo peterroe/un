@@ -10,7 +10,6 @@ $ pnpm create un
 ? Select a framework: ›
     cli-starter
     docs-starter
-    monorepo-starter
 ❯   ts-starter
     ts-starter-vite
     vue-component-starter
