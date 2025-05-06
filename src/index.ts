@@ -1,11 +1,8 @@
 import fs from 'node:fs'
 import { resolve } from 'node:path'
-import { fileURLToPath } from 'url'
+import { fileURLToPath } from 'node:url'
 import fse from 'fs-extra'
-import minimist from 'minimist'
 import { downloadTemplate } from 'giget'
-import ora from 'ora'
-import prompts from 'prompts'
 import {
   blue,
   cyan,
@@ -15,6 +12,9 @@ import {
   reset,
   yellow,
 } from 'kolorist'
+import minimist from 'minimist'
+import ora from 'ora'
+import prompts from 'prompts'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
@@ -73,7 +73,7 @@ async function init() {
         name: 'projectName',
         message: reset('Project name:'),
         initial: defaultTargetDir,
-        onState: (state: { value: string; aborted: string; exited: string }) => {
+        onState: (state: { value: string, aborted: string, exited: string }) => {
           if (state.exited || state.aborted)
             process.exit(0)
 
@@ -84,7 +84,7 @@ async function init() {
         type: () => (!fs.existsSync(targetDir) || isEmpty(targetDir)) ? null : 'confirm',
         name: 'overwrite',
         message: `Target directory "${targetDir}" is not empty. Remove existing files and continue?`,
-        onState: (state: { value: string; aborted: string; exited: string }) => {
+        onState: (state: { value: string, aborted: string, exited: string }) => {
           if (state.exited || state.aborted)
             process.exit(0)
         },
@@ -96,7 +96,7 @@ async function init() {
           return null
         },
         name: 'overwriteChecker',
-        onState: (state: { value: string; aborted: string; exited: string }) => {
+        onState: (state: { value: string, aborted: string, exited: string }) => {
           if (state.exited || state.aborted)
             process.exit(0)
         },
@@ -106,12 +106,12 @@ async function init() {
         name: 'framework',
         message: (typeof argTemplate === 'string' && !FRAMEWORK.some(it => it.value === argTemplate))
           ? reset(
-            `"${argTemplate}" isn't a valid template. Please choose from below: `,
-          )
+              `"${argTemplate}" isn't a valid template. Please choose from below: `,
+            )
           : reset('Select a framework:'),
         initial: 0,
         choices: FRAMEWORK,
-        onState: (state: { value: string; aborted: string; exited: string }) => {
+        onState: (state: { value: string, aborted: string, exited: string }) => {
           if (state.exited || state.aborted)
             process.exit(0)
         },
@@ -159,7 +159,8 @@ function emptyDir(dir: string) {
     if (file === '.git')
       continue
     fs.rmSync(
-      resolve(dir, file), { recursive: true, force: true },
+      resolve(dir, file),
+      { recursive: true, force: true },
     )
   }
 }

@@ -51,16 +51,16 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.4.0",
-    "@types/node": "18.18.9",
-    "@vitest/coverage-v8": "3.0.7",
-    "bumpp": "8.2.1",
-    "cac": "6.7.14",
-    "eslint": "9.21.0",
-    "esno": "0.16.3",
-    "husky": "8.0.3",
-    "typescript": "5.8.2",
-    "unbuild": "3.5.0",
-    "vitest": "3.0.7"
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "bumpp": "catalog:",
+    "cac": "catalog:",
+    "eslint": "catalog:",
+    "esno": "catalog:",
+    "husky": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vitest": "catalog:"
   }
 }

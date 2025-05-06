@@ -44,15 +44,15 @@
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.4.0",
-    "@types/node": "^18.18.9",
-    "bumpp": "8.2.1",
-    "eslint": "9.21.0",
-    "esno": "0.16.3",
-    "husky": "8.0.3",
-    "typescript": "5.8.2",
-    "vite": "5.4.14",
-    "vite-plugin-dts": "2.3.0",
-    "vitest": "3.0.7"
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "bumpp": "catalog:",
+    "eslint": "catalog:",
+    "esno": "catalog:",
+    "husky": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:",
+    "vitest": "catalog:"
   }
 }

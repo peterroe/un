@@ -39,17 +39,17 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "vite": "5.4.14"
+    "vite": "catalog:"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.4.0",
-    "@types/node": "18.18.9",
-    "bumpp": "8.2.1",
-    "eslint": "9.21.0",
-    "tsup": "^6.7.0",
-    "typescript": "5.8.2",
-    "unbuild": "3.5.0",
-    "vitest": "3.0.7"
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "bumpp": "catalog:",
+    "eslint": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vitest": "catalog:"
   },
   "resolutions": {
     "@intlify/shared": "^9.7.0"
