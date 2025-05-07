@@ -1,11 +1,9 @@
 import fs from 'node:fs'
 import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import fse from 'fs-extra'
-import { downloadTemplate } from 'giget'
+import fse, { cpSync } from 'fs-extra'
 import {
   blue,
-  cyan,
   green,
   magenta,
   red,
@@ -46,11 +44,10 @@ interface Framework {
   title: string
   value: string
 }
-const colorPreset = [yellow, magenta, cyan, blue, red, green]
+const colorPreset = [yellow, magenta, blue, red, green]
 const templateNames = [
   'cli-starter',
   'docs-starter',
-  'monorepo-starter',
   'ts-starter',
   'ts-starter-vite',
   'vue-component-starter',
@@ -127,10 +124,15 @@ async function init() {
 
   const spinner = ora('Download template...').start()
 
-  await downloadTemplate(`github:peterroe/un/templates/${framework}`, {
-    dir: root,
-    forceClean: overwrite,
-  })
+  const targetTemplateDir = resolve(__dirname, `../templates/${framework}`)
+  try {
+    cpSync(targetTemplateDir, root, {
+      recursive: true,
+    })
+  }
+  catch (e) {
+    console.error(e)
+  }
 
   spinner.succeed()
 

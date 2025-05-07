@@ -10,7 +10,6 @@ Help you create:
 * 🖖 Vue component lib template
 * 📚 document template 
 * 🦾 Typescript lib template
-* 🗂 monorepo template
 
 ## Try it now!
 
@@ -25,7 +24,6 @@ Set your configuration:
 ? Select a framework: ›
 ❯   cli-starter
     docs-starter
-    monorepo-starter
     ts-starter
     ts-starter-vite
     vue-component-starter
@@ -47,4 +45,3 @@ More:
 * [docs-starter](./templates/docs-starter/README.md)
 * [ts-starter](./templates/ts-starter/README.md)
 * [ts-starter-vite](./templates/ts-starter-vite/README.md)
-* [monorepo-starter](./templates/monorepo-starter/README.md)

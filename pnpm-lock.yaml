@@ -6,279 +6,66 @@ settings:
 
 catalogs:
   default:
-    '@antfu/eslint-config':
-      specifier: 4.4.0
-      version: 4.4.0
-    '@iconify-json/carbon':
-      specifier: ^1.1.27
-      version: 1.1.37
-    '@iconify-json/file-icons':
-      specifier: ^1.1.8
-      version: 1.1.10
-    '@iconify-json/logos':
-      specifier: ^1.1.33
-      version: 1.1.37
-    '@iconify-json/material-symbols':
-      specifier: ^1.1.66
-      version: 1.1.88
-    '@iconify-json/mdi':
-      specifier: ^1.1.52
-      version: 1.1.55
-    '@iconify-json/ph':
-      specifier: ^1.1.5
-      version: 1.1.6
-    '@iconify-json/twemoji':
-      specifier: ^1.1.11
-      version: 1.1.12
-    '@iconify-json/unjs':
-      specifier: ^1.1.0
-      version: 1.1.2
-    '@iconify-json/vscode-icons':
-      specifier: ^1.1.25
-      version: 1.1.29
-    '@netlify/functions':
-      specifier: ^2.4.0
-      version: 2.8.1
-    '@shikijs/markdown-it':
-      specifier: 2.1.0
-      version: 2.1.0
-    '@shikijs/transformers':
-      specifier: 2.1.0
-      version: 2.1.0
-    '@shikijs/vitepress-twoslash':
-      specifier: 2.1.0
-      version: 2.1.0
-    '@types/babel__core':
-      specifier: ^7.20.1
-      version: 7.20.5
     '@types/fs-extra':
       specifier: ^9.0.13
       version: 9.0.13
-    '@types/hast':
-      specifier: ^3.0.3
-      version: 3.0.4
-    '@types/markdown-it':
-      specifier: ^14.1.2
-      version: 14.1.2
     '@types/minimist':
       specifier: ^1.2.5
       version: 1.2.5
     '@types/node':
       specifier: ^22.15.13
       version: 22.15.13
-    '@types/nodemailer':
-      specifier: ^6.4.14
-      version: 6.4.15
-    '@types/nprogress':
-      specifier: ^0.2.3
-      version: 0.2.3
     '@types/prompts':
       specifier: ^2.4.8
       version: 2.4.8
-    '@unocss/postcss':
-      specifier: ^0.61.0
-      version: 0.61.9
-    '@vitejs/plugin-vue':
-      specifier: 5.2.1
-      version: 5.2.1
     '@vitest/coverage-v8':
       specifier: 3.0.7
       version: 3.0.7
     '@vitest/ui':
       specifier: 3.0.7
       version: 3.0.7
-    '@vue/repl':
-      specifier: ^3.0.0
-      version: 3.4.0
-    '@vue/test-utils':
-      specifier: 2.4.1
-      version: 2.4.1
-    '@vueuse/core':
-      specifier: ^10.7.0
-      version: 10.11.1
-    atropos:
-      specifier: ^1.0.2
-      version: 1.0.2
     bumpp:
       specifier: 8.2.1
       version: 8.2.1
-    cac:
-      specifier: 6.7.14
-      version: 6.7.14
-    consola:
-      specifier: ^3.2.3
-      version: 3.4.0
-    cz-conventional-changelog:
-      specifier: ^3.3.0
-      version: 3.3.0
-    es-toolkit:
-      specifier: ^1.9.0
-      version: 1.16.0
-    eslint:
-      specifier: 9.21.0
-      version: 9.21.0
     esno:
       specifier: 0.16.3
       version: 0.16.3
-    filesize:
-      specifier: ^10.1.4
-      version: 10.1.4
     fs-extra:
       specifier: ^11.1.1
       version: 11.2.0
-    gh-pages:
-      specifier: 5.0.0
-      version: 5.0.0
-    giget:
-      specifier: ^1.2.1
-      version: 1.2.1
-    happy-dom:
-      specifier: 8.9.0
-      version: 8.9.0
-    hast-util-from-html:
-      specifier: ^2.0.1
-      version: 2.0.1
-    hast-util-to-html:
-      specifier: ^9.0.0
-      version: 9.0.5
-    hastscript:
-      specifier: ^8.0.0
-      version: 8.0.0
     husky:
       specifier: 8.0.3
       version: 8.0.3
-    js-yaml:
-      specifier: ^4.1.0
-      version: 4.1.0
     kolorist:
       specifier: ^1.8.0
       version: 1.8.0
-    lz-string:
-      specifier: ^1.5.0
-      version: 1.5.0
-    markdown-it-container:
-      specifier: ^4.0.0
-      version: 4.0.0
-    markdown-it-magic-link:
-      specifier: ^0.0.2
-      version: 0.0.2
-    markdown-it-multimd-table:
-      specifier: ^4.2.3
-      version: 4.2.3
-    mermaid:
-      specifier: ^10.6.1
-      version: 10.9.1
     minimist:
       specifier: ^1.2.8
       version: 1.2.8
-    nanoid:
-      specifier: ^5.0.4
-      version: 5.0.7
-    netlify-cli:
-      specifier: ^17.10.2
-      version: 17.34.1
-    nodemailer:
-      specifier: ^6.9.8
-      version: 6.9.14
-    nprogress:
-      specifier: ^0.2.0
-      version: 0.2.0
-    ofetch:
-      specifier: ^1.1.1
-      version: 1.3.4
     ora:
       specifier: ^8.0.1
       version: 8.0.1
     prompts:
       specifier: ^2.4.2
       version: 2.4.2
-    rehype-stringify:
-      specifier: ^10.0.0
-      version: 10.0.0
-    remark-parse:
-      specifier: ^11.0.0
-      version: 11.0.0
-    remark-rehype:
-      specifier: ^11.0.0
-      version: 11.1.0
-    shiki:
-      specifier: 2.1.0
-      version: 2.1.0
-    shiki-magic-move:
-      specifier: ^0.3.4
-      version: 0.3.7
-    simple-git:
-      specifier: ^3.22.0
-      version: 3.25.0
-    stylus:
-      specifier: ^0.62.0
-      version: 0.62.0
     taze:
       specifier: ^0.9.2
       version: 0.9.2
-    ts-morph:
-      specifier: ^21.0.1
-      version: 21.0.1
-    tsup:
-      specifier: ^6.7.0
-      version: 6.7.0
     typescript:
       specifier: 5.8.2
       version: 5.8.2
-    ufo:
-      specifier: ^1.3.2
-      version: 1.5.4
     unbuild:
       specifier: 3.5.0
       version: 3.5.0
-    unified:
-      specifier: ^11.0.4
-      version: 11.0.5
-    unist-util-visit:
-      specifier: ^5.0.0
-      version: 5.0.0
     unocss:
       specifier: ^0.61.0
       version: 0.61.9
-    unplugin-icons:
-      specifier: ^0.17.0
-      version: 0.17.3
-    unplugin-vue-components:
-      specifier: ^0.25.1
-      version: 0.25.2
-    unsplash-js:
-      specifier: ^7.0.18
-      version: 7.0.19
-    v-viewer:
-      specifier: ^3.0.11
-      version: 3.0.11
-    viewerjs:
-      specifier: ^1.11.4
-      version: 1.11.6
     vite:
       specifier: 5.4.14
       version: 5.4.14
-    vite-plugin-dts:
-      specifier: 2.3.0
-      version: 2.3.0
-    vite-plugin-inspect:
-      specifier: ^0.7.42
-      version: 0.7.42
-    vitepress:
-      specifier: ^1.6.3
-      version: 1.6.3
     vitest:
       specifier: 3.0.7
       version: 3.0.7
-    vue:
-      specifier: 3.5.13
-      version: 3.5.13
-    vue-tsc:
-      specifier: 1.8.22
-      version: 1.8.22
-    vue3-lazyload:
-      specifier: ^0.3.8
-      version: 0.3.8
 
 importers:
 
@@ -287,9 +74,6 @@ importers:
       '@types/node':
         specifier: 'catalog:'
         version: 22.15.13
-      giget:
-        specifier: 'catalog:'
-        version: 1.2.1
       ora:
         specifier: 'catalog:'
         version: 8.0.1
@@ -297,11 +81,8 @@ importers:
         specifier: 'catalog:'
         version: 0.9.2
       unocss:
-        specifier: catalog:default
+        specifier: 'catalog:'
         version: 0.61.9(postcss@8.5.3)(rollup@4.34.9)(vite@5.4.14(@types/node@22.15.13)(stylus@0.62.0))
-      vitepress:
-        specifier: catalog:default
-        version: 1.6.3(@algolia/client-search@5.20.4)(@types/node@22.15.13)(jwt-decode@4.0.0)(nprogress@0.2.0)(postcss@8.5.3)(search-insights@2.17.3)(stylus@0.62.0)(typescript@5.8.2)
     devDependencies:
       '@types/fs-extra':
         specifier: 'catalog:'
@@ -6217,10 +5998,6 @@ packages:
     resolution: {integrity: sha512-TOiP1nwLsH5shG85Yt6v6Kjq5JU/44jXyEpbcfPgmj3C829yeXIlx9nAEwQRaxtRF3SJinn2lz7XUkfG9W/U4g==}
     engines: {node: ^14.18.0 || ^16.13.0 || >=18.0.0}
 
-  giget@1.2.1:
-    resolution: {integrity: sha512-4VG22mopWtIeHwogGSy1FViXVo0YT+m6BrqZfz0JJFwbSsePsCdOzdLIIli5BtMp7Xe8f/o2OmBpQX2NBOC24g==}
-    hasBin: true
-
   git-repo-info@2.1.1:
     resolution: {integrity: sha512-8aCohiDo4jwjOwma4FmYFd3i97urZulL8XL24nIPxuE+GZnfsAyy/g2Shqx6OjUiFKUXZM+Yy+KHnOmmA3FVcg==}
     engines: {node: '>= 4.0'}
@@ -7920,11 +7697,6 @@ packages:
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
-
-  nypm@0.3.4:
-    resolution: {integrity: sha512-1JLkp/zHBrkS3pZ692IqOaIKSYHmQXgqfELk6YTOfVBnwealAmPA1q2kKK7PHJAHSMBozerThEFZXP3G6o7Ukg==}
-    engines: {node: ^14.16.0 || >=16.10.0}
-    hasBin: true
 
   object-assign@4.1.1:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
@@ -10673,7 +10445,7 @@ snapshots:
       '@babel/traverse': 7.25.3
       '@babel/types': 7.26.9
       convert-source-map: 2.0.0
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -10834,7 +10606,7 @@ snapshots:
       '@babel/parser': 7.26.9
       '@babel/template': 7.25.0
       '@babel/types': 7.26.9
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -11755,7 +11527,7 @@ snapshots:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.10
       '@iconify/types': 2.0.0
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       kolorist: 1.8.0
       local-pkg: 0.5.0
       mlly: 1.7.4
@@ -13286,7 +13058,7 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 1.0.2
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
       istanbul-lib-source-maps: 5.0.6
@@ -13680,6 +13452,12 @@ snapshots:
       acorn: 8.14.0
 
   acorn@8.14.0: {}
+
+  agent-base@6.0.2:
+    dependencies:
+      debug: 4.4.0
+    transitivePeerDependencies:
+      - supports-color
 
   agent-base@6.0.2(supports-color@9.4.0):
     dependencies:
@@ -14829,6 +14607,10 @@ snapshots:
   debug@4.3.6:
     dependencies:
       ms: 2.1.2
+
+  debug@4.4.0:
+    dependencies:
+      ms: 2.1.3
 
   debug@4.4.0(supports-color@9.4.0):
     dependencies:
@@ -16172,17 +15954,6 @@ snapshots:
       node-fetch: 3.3.2
       semver: 7.7.1
 
-  giget@1.2.1:
-    dependencies:
-      citty: 0.1.6
-      consola: 3.4.0
-      defu: 6.1.4
-      node-fetch-native: 1.6.4
-      nypm: 0.3.4
-      ohash: 1.1.3
-      pathe: 1.1.2
-      tar: 6.2.0
-
   git-repo-info@2.1.1: {}
 
   gitconfiglocal@2.1.0:
@@ -16346,6 +16117,19 @@ snapshots:
     transitivePeerDependencies:
       - uWebSockets.js
 
+  happy-dom@8.9.0:
+    dependencies:
+      css.escape: 1.5.1
+      he: 1.2.0
+      iconv-lite: 0.6.3
+      node-fetch: 2.7.0
+      webidl-conversions: 7.0.0
+      whatwg-encoding: 2.0.0
+      whatwg-mimetype: 3.0.0
+    transitivePeerDependencies:
+      - encoding
+    optional: true
+
   happy-dom@8.9.0(encoding@0.1.13):
     dependencies:
       css.escape: 1.5.1
@@ -16486,8 +16270,8 @@ snapshots:
   http-proxy-agent@5.0.0:
     dependencies:
       '@tootallnate/once': 2.0.0
-      agent-base: 6.0.2(supports-color@9.4.0)
-      debug: 4.4.0(supports-color@9.4.0)
+      agent-base: 6.0.2
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -16515,6 +16299,13 @@ snapshots:
     dependencies:
       quick-lru: 5.1.1
       resolve-alpn: 1.2.1
+
+  https-proxy-agent@5.0.1:
+    dependencies:
+      agent-base: 6.0.2
+      debug: 4.4.0
+    transitivePeerDependencies:
+      - supports-color
 
   https-proxy-agent@5.0.1(supports-color@9.4.0):
     dependencies:
@@ -16575,7 +16366,7 @@ snapshots:
   importx@0.4.3:
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.1)
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       esbuild: 0.23.1
       jiti: 2.0.0-beta.2
       jiti-v1: jiti@1.21.7
@@ -16835,7 +16626,7 @@ snapshots:
   istanbul-lib-source-maps@5.0.6:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       istanbul-lib-coverage: 3.2.2
     transitivePeerDependencies:
       - supports-color
@@ -17228,7 +17019,7 @@ snapshots:
       cacache: 16.1.3
       http-cache-semantics: 4.1.1
       http-proxy-agent: 5.0.0
-      https-proxy-agent: 5.0.1(supports-color@9.4.0)
+      https-proxy-agent: 5.0.1
       is-lambda: 1.0.1
       lru-cache: 7.18.3
       minipass: 3.3.6
@@ -18178,6 +17969,11 @@ snapshots:
 
   node-fetch-native@1.6.4: {}
 
+  node-fetch@2.7.0:
+    dependencies:
+      whatwg-url: 5.0.0
+    optional: true
+
   node-fetch@2.7.0(encoding@0.1.13):
     dependencies:
       whatwg-url: 5.0.0
@@ -18359,13 +18155,6 @@ snapshots:
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
-
-  nypm@0.3.4:
-    dependencies:
-      citty: 0.1.6
-      execa: 8.0.1
-      pathe: 1.1.2
-      ufo: 1.5.4
 
   object-assign@4.1.1: {}
 
@@ -19568,8 +19357,8 @@ snapshots:
 
   socks-proxy-agent@7.0.0:
     dependencies:
-      agent-base: 6.0.2(supports-color@9.4.0)
-      debug: 4.4.0(supports-color@9.4.0)
+      agent-base: 6.0.2
+      debug: 4.4.0
       socks: 2.7.1
     transitivePeerDependencies:
       - supports-color
@@ -19768,7 +19557,7 @@ snapshots:
   stylus@0.62.0:
     dependencies:
       '@adobe/css-tools': 4.3.3
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       glob: 7.2.3
       sax: 1.3.0
       source-map: 0.7.4
@@ -20543,7 +20332,7 @@ snapshots:
   vite-node@3.0.7(@types/node@22.15.13)(stylus@0.62.0):
     dependencies:
       cac: 6.7.14
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       es-module-lexer: 1.6.0
       pathe: 2.0.3
       vite: 5.4.14(@types/node@22.15.13)(stylus@0.62.0)
@@ -20746,7 +20535,7 @@ snapshots:
       '@vitest/spy': 3.0.7
       '@vitest/utils': 3.0.7
       chai: 5.2.0
-      debug: 4.4.0(supports-color@9.4.0)
+      debug: 4.4.0
       expect-type: 1.2.0
       magic-string: 0.30.17
       pathe: 2.0.3
@@ -20762,7 +20551,7 @@ snapshots:
       '@types/debug': 4.1.12
       '@types/node': 22.15.13
       '@vitest/ui': 3.0.7(vitest@3.0.7)
-      happy-dom: 8.9.0(encoding@0.1.13)
+      happy-dom: 8.9.0
     transitivePeerDependencies:
       - less
       - lightningcss

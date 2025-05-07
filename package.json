@@ -54,7 +54,6 @@
   },
   "dependencies": {
     "@types/node": "catalog:",
-    "giget": "catalog:",
     "ora": "catalog:",
     "taze": "catalog:",
     "unocss": "catalog:"
