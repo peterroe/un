@@ -33,7 +33,7 @@
     "bin",
     "dist",
     "package.json",
-    "template"
+    "templates"
   ],
   "scripts": {
     "build": "unbuild",
