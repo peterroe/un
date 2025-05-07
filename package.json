@@ -1,6 +1,6 @@
 {
   "name": "create-un",
-  "version": "2.0.40",
+  "version": "2.0.41",
   "packageManager": "pnpm@9.5.0",
   "description": "Create Universal template",
   "author": "peterroe",
@@ -43,14 +43,14 @@
     "docs:build": "pnpm --filter docs build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "release": "pnpm build && bumpp && pnpm publish --provenance",
+    "release": "pnpm build && bumpp && pnpm publish",
     "typecheck": "tsc --noEmit",
     "minor": "taze minor -r",
     "up:minor": "taze minor -r -w"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "provenance": true
+    "provenance": false
   },
   "dependencies": {
     "@types/node": "catalog:",
