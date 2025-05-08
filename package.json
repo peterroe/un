@@ -1,6 +1,6 @@
 {
   "name": "create-un",
-  "version": "2.0.44",
+  "version": "2.0.45-beta.0",
   "packageManager": "pnpm@9.5.0",
   "description": "Create Universal template",
   "author": "peterroe",
@@ -29,13 +29,6 @@
   "bin": {
     "create-un": "bin/index.mjs"
   },
-  "files": [
-    "**/.gitignore",
-    "bin",
-    "dist",
-    "package.json",
-    "builds"
-  ],
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",
