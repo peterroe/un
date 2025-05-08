@@ -38,7 +38,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prerelease": "node scripts/pre-release.mjs",
-    "release": "pnpm build && bumpp --tag false && pnpm publish --no-git-checks",
+    "release": "pnpm build && bumpp && pnpm publish --no-git-checks",
     "typecheck": "tsc --noEmit",
     "minor": "taze minor -r",
     "up:minor": "taze minor -r -w"
