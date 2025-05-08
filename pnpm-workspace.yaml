@@ -39,7 +39,7 @@ catalog:
   cz-conventional-changelog: ^3.3.0
   es-toolkit: ^1.9.0
   eslint: 9.21.0
-  esno: 0.16.3
+  esno: 0.17.0
   execa: ^9.5.2
   filesize: ^10.1.4
   fs-extra: ^11.1.1
