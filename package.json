@@ -34,7 +34,7 @@
     "bin",
     "dist",
     "package.json",
-    "templates"
+    "builds"
   ],
   "scripts": {
     "build": "unbuild",
@@ -44,7 +44,8 @@
     "docs:build": "pnpm --filter docs build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "release": "pnpm build && bumpp && pnpm publish",
+    "pre:release": "node scripts/pre-release.mjs",
+    "release": "pnpm build && bumpp && pnpm publish ",
     "typecheck": "tsc --noEmit",
     "minor": "taze minor -r",
     "up:minor": "taze minor -r -w"
@@ -57,7 +58,9 @@
     "@types/node": "catalog:",
     "ora": "catalog:",
     "taze": "catalog:",
-    "unocss": "catalog:"
+    "unocss": "catalog:",
+    "execa": "catalog:default",
+    "tar": "catalog:"
   },
   "devDependencies": {
     "@types/fs-extra": "catalog:",

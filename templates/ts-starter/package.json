@@ -27,10 +27,6 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "package.json"
-  ],
   "scripts": {
     "build": "tsup",
     "lint": "eslint \"**/*.{ts,js}\"",

@@ -31,10 +31,6 @@
   "bin": {
     "__pkg_name_placeholder__": "./bin/index.mjs"
   },
-  "files": [
-    "dist",
-    "package.json"
-  ],
   "scripts": {
     "build": "unbuild",
     "stub": "unbuild --stub",

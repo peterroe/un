@@ -26,10 +26,6 @@
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "package.json"
-  ],
   "scripts": {
     "build": "vite build",
     "lint": "eslint \"**/*.{ts,js}\"",

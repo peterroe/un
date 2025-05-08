@@ -1,6 +1,7 @@
 {
   "name": "__pkg_name_placeholder__",
   "type": "module",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "vitepress dev",

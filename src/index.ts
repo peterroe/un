@@ -124,7 +124,7 @@ async function init() {
 
   const spinner = ora('Download template...').start()
 
-  const targetTemplateDir = resolve(__dirname, `../templates/${framework}`)
+  const targetTemplateDir = resolve(__dirname, `../builds/${framework}`)
   try {
     cpSync(targetTemplateDir, root, {
       recursive: true,
