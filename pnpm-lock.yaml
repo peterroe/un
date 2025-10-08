@@ -178,8 +178,8 @@ catalogs:
       specifier: ^17.10.2
       version: 17.34.1
     nodemailer:
-      specifier: ^6.9.8
-      version: 6.9.14
+      specifier: ^7.0.0
+      version: 7.0.9
     nprogress:
       specifier: ^0.2.0
       version: 0.2.0
@@ -297,7 +297,7 @@ importers:
         specifier: 'catalog:'
         version: 8.0.1
       tar:
-        specifier: catalog:default
+        specifier: 'catalog:'
         version: 7.4.3
       taze:
         specifier: 'catalog:'
@@ -407,7 +407,7 @@ importers:
         version: 17.34.1(@types/node@22.15.13)(encoding@0.1.13)(picomatch@4.0.2)
       nodemailer:
         specifier: 'catalog:'
-        version: 6.9.14
+        version: 7.0.9
       nprogress:
         specifier: 'catalog:'
         version: 0.2.0
@@ -642,7 +642,7 @@ importers:
         version: 17.34.1(@types/node@22.15.13)(encoding@0.1.13)(picomatch@4.0.2)
       nodemailer:
         specifier: 'catalog:'
-        version: 6.9.14
+        version: 7.0.9
       nprogress:
         specifier: 'catalog:'
         version: 0.2.0
@@ -7636,8 +7636,8 @@ packages:
     resolution: {integrity: sha512-Kf3L9spAL6lEHMPyqpwHSTNG3LPkOXBfSUnBMG/YE2TdoC8Qoqf0+qg01nr6K9MFQEcXtWUyTQzLJByRixSBsA==}
     engines: {node: '>=14.18.0'}
 
-  nodemailer@6.9.14:
-    resolution: {integrity: sha512-Dobp/ebDKBvz91sbtRKhcznLThrKxKt97GI2FAlAyy+fk19j73Uz3sBXolVtmcXjaorivqsbbbjDY+Jkt4/bQA==}
+  nodemailer@7.0.9:
+    resolution: {integrity: sha512-9/Qm0qXIByEP8lEV2qOqcAW7bRpL8CR9jcTwk3NBnHJNmP9fIJ86g2fgmIXqHY+nj55ZEMwWqYAT2QTDpRUYiQ==}
     engines: {node: '>=6.0.0'}
 
   non-layered-tidy-tree-layout@2.0.2:
@@ -8940,6 +8940,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
@@ -17896,7 +17897,7 @@ snapshots:
       path-exists: 5.0.0
       semver: 7.7.1
 
-  nodemailer@6.9.14: {}
+  nodemailer@7.0.9: {}
 
   non-layered-tidy-tree-layout@2.0.2: {}
 

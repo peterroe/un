@@ -60,7 +60,7 @@ catalog:
   minimist: ^1.2.8
   nanoid: ^5.0.4
   netlify-cli: ^17.10.2
-  nodemailer: ^6.9.8
+  nodemailer: ^7.0.0
   nprogress: ^0.2.0
   ofetch: ^1.1.1
   ora: ^8.0.1
