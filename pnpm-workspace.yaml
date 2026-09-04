@@ -91,7 +91,7 @@ catalog:
   vite-plugin-dts: 2.3.0
   vite-plugin-inspect: ^0.7.42
   vitepress: ^1.6.3
-  vitest: 3.0.7
+  vitest: 3.2.6
   vue: 3.5.13
   vue-tsc: 1.8.22
   vue3-lazyload: ^0.3.8
