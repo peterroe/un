@@ -27,8 +27,8 @@ catalog:
   "@types/prompts": ^2.4.8
   "@unocss/postcss": ^0.61.0
   "@vitejs/plugin-vue": 5.2.1
-  "@vitest/coverage-v8": 3.0.7
-  "@vitest/ui": 3.0.7
+  "@vitest/coverage-v8": 3.2.7
+  "@vitest/ui": 3.2.7
   "@vue/repl": ^3.0.0
   "@vue/test-utils": 2.4.1
   "@vueuse/core": ^10.7.0
